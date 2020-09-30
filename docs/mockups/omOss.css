@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #00509e;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 5vh;
+}
+
+#container h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+#quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+#container h2 {
+  margin-bottom: 0;
+}
+
+#container p {
+  margin-top: 0;
+}
+
+#secondHeading, #secondHeadingText {
+  text-align: right;
+}
+
+
+#internettgjengenHeading {
+  font-size: 50px;
+  text-align: center;
+}
+
+.card {
+  height: 40vh;
+  width: 15vw;
+  background-color: lightgray;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 1vw;
+}
+
+.cardContainer {
+  padding: 1vw;
+}
+
+#scrollTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
