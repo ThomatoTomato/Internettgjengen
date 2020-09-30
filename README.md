@@ -27,12 +27,17 @@ Vår fantastiske gjeng ser ut til å ligge ganske godt ifht. deadlinen vi har sa
 
 Filnavn | Ansvar | Frist 
 --- | ---|  ---
-forside.html | Sarah/Andrine | 18.10.20
 hovedside.html | Thomas/Maren | 09.10.20
+profil.html | Sarah/Andrine | 12.10.20
+registrering.html | Sarah/Andrine | 12.10.20
+forside.html | Sarah/Andrine | 18.10.20
 howToPlay.html | Sarah/Andrine | 18.10.20
-omOss.html | Markus | 04.10.20
-profil.html | Sarah/Andrine | 18.10.20
-registrering.html | Sarah/Andrine | 18.10.20
+omOss.html | Markus | 18.10.20
 tidligereVinnere.html | Sarah/Andrine | 18.10.20
-vårMetode.html | Markus | 04.10.20
-style.css | Alle | 04.11.20
+vårMetode.html | Markus | 18.10.20
+fil.js | ?? | 25.10.20
+fil.js | ?? | 25.10.20
+fil.js | ?? | 25.10.20
+fil.js | ?? | 25.10.20
+testStart | Alle | 25.10.20
+style.css | Alle | 28.10.20
