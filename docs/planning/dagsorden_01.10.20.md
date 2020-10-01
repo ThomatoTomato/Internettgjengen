@@ -4,7 +4,7 @@ Webtekmøte 01.10.20 14:15 - ..
     1. Hvordan har folk det?
     2. Hvis dere kunne være diktator over ett vilkårlig land i verden, hvilket land ville du valgt og hvorfor?
 
-2. Status
+2. Status  
     0. Klargjøring av fast møtetid og evt feste det *siste* møtet
     1. Hvordan går det med oppgave 1.->3.? *(Markus)*
     2. Hvordan går det med oppgave 4? *(Sarah)*
@@ -31,8 +31,9 @@ Webtekmøte 01.10.20 14:15 - ..
 6. Positiv adferdsstøtte
     1. Ros til Maren for å bli ferdig med mockupsa så fort.
     2. Ros til Andrine for å kontinuerlig være sammarbeidsvillig.
-    3. Har ikke sett Sarah på en stund (så Sarah i dag), god bedring.
-    4. Ros til Markus for å lage htlm filmer.
+    3. Har ikke sett Sarah på en stund (så Sarah i dag), god bedring. Sarah var den eneste som var her 1415.
+    4. Ros til Markus for å lage html filer.
+    5. Ros til Thomas for å ha kommet seg til frisøren å klipt seg.
 
 7. Gjennomgang av veikart med tidsfrister
     1. Thomas snakker om tidsfristene for når ting burde være ferdig
