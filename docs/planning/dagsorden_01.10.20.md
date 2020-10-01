@@ -26,12 +26,13 @@ Webtekmøte 01.10.20 14:15 - ..
 5. Gjennomgang og diskusjon av JS
     1. Markus forklarer hvilke filer vi trenger for å holde de forskjellige funksjonene
     2. Diskusjon av filene og funksjonene
+    3. Hvem er komfortable med å skrive masse js?
 
 6. Positiv adferdsstøtte
     1. Ros til Maren for å bli ferdig med mockupsa så fort.
     2. Ros til Andrine for å kontinuerlig være sammarbeidsvillig.
     3. Har ikke sett Sarah på en stund (så Sarah i dag), god bedring.
-    3. Ros til Markus for å lage htlm filmer.
+    4. Ros til Markus for å lage htlm filmer.
 
 7. Gjennomgang av veikart med tidsfrister
     1. Thomas snakker om tidsfristene for når ting burde være ferdig
