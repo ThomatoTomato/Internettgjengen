@@ -14,5 +14,5 @@ Disse fiktive senarioene skal reflektere rådene vi skal ha på "How to play" si
 På skrå står det skrevet en tekst der det står "Disse har skjønt det" som er en referanse til "How to play" siden, der det står skrevet med pil mot "tidligere vinnere" siden. 
 Denne teksten er i hvit som ikke egentlig har blitt brukt så mye på de andre siden, men den blender mer inn enn de andre skarpere fargene vi har brukt tidligere.
 
-Thombnailen er fremdeles den samme som gir kontinuitet på designet og at man ikke trenger å lete etter sidene som ligger der.
+Thumbnailen er fremdeles den samme som gir kontinuitet på designet og at man ikke trenger å lete etter sidene som ligger der.
 

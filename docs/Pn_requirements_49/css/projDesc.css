@@ -39,3 +39,12 @@ body {
 .container h1 {
   margin-bottom: 0;
 }
+
+img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+p {
+  margin: 10px 0;
+}
