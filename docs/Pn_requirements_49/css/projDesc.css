@@ -48,3 +48,7 @@ img {
 p {
   margin: 10px 0;
 }
+
+table, td {
+  border: solid 1px black;
+}

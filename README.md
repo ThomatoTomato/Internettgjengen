@@ -28,9 +28,9 @@ howToPlay.html | Andrine | 18.10.20
 omOss.html | Maren | 18.10.20
 tidligereVinnere.html | Andrine | 18.10.20
 vårMetode.html | Maren | 18.10.20
-fil.js | ?? | 25.10.20
-fil.js | ?? | 25.10.20
-fil.js | ?? | 25.10.20
-fil.js | ?? | 25.10.20
+forValidation.js | Maren | 25.10.20
+Matcher.js | Andrine | 25.10.20
+Scrolling.js | Sarah | 25.10.20
+Chattebot.js | Alle | 25.10.20
 testStart | Alle | 25.10.20
 style.css | Alle | 28.10.20
