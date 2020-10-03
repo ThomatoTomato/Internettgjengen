@@ -89,14 +89,14 @@
             <h3>Tidligere vinnere</h3>
             <p>Bakgrunnsfargen på denen siden er den samme blåfargen som de andre for å ha et tema.
               Overskriften her er samme font og farge som på forsiden, men her er den mye større og er midtstilt for å ha et gjennomgående tema.
-              I øvre venstre hjørnet er det et rødt piksel hjerte som går igjen på de flere av sidene. 
+              I øvre venstre hjørnet er det et rødt piksel hjerte som går igjen på de flere av sidene.
               I øvre høyre hjørnet er det et profilikon som man kan trykke på for å komme seg til profilen, logge seg inn eller registrere seg.</p>
             <p>Under overskriften har vi to store bokser med en 8 pxl bord i mørk blå som på de andre sidene.
               Bakgrunnen i boksene er hvit og fonten er en type sans-serif.
-              Inne i boksene er det tekst skrevet av to par som har møtt hverandre via siden vår med fiktive historier og bilder av "disse parene". 
-              Vi har med dette for å kunne vise til at nettsiden og matchingen vår fungerer. 
+              Inne i boksene er det tekst skrevet av to par som har møtt hverandre via siden vår med fiktive historier og bilder av "disse parene".
+              Vi har med dette for å kunne vise til at nettsiden og matchingen vår fungerer.
               Disse fiktive senarioene skal reflektere rådene vi skal ha på "How to play" siden og derfor er relevante for en aktuell bruker eller en som mister motivasjon.</p>
-            <p>På skrå står det skrevet en tekst der det står "Disse har skjønt det" som er en referanse til "How to play" siden, der det står skrevet med pil mot "tidligere vinnere" siden. 
+            <p>På skrå står det skrevet en tekst der det står "Disse har skjønt det" som er en referanse til "How to play" siden, der det står skrevet med pil mot "tidligere vinnere" siden.
               Denne teksten er i hvit som ikke egentlig har blitt brukt så mye på de andre siden, men den blender mer inn enn de andre skarpere fargene vi har brukt tidligere.</p>
             <p>Navbaren er fremdeles den samme som gir kontinuitet på designet og at man ikke trenger å lete etter sidene som ligger der.</p>
             <img src="../mockups/TideligereVinnere.png" alt="TideligereVinnere">
@@ -129,23 +129,27 @@
         <p>På nettsiden ønsker vi å implementere følgende js applikasjoner:</p>
         <ul>
           <li>
-            <p>Form validation på login og registrering</p>
+            <p><b>Form validation på login og registrering:</b> <br>
+              Vi leser av input og sjekker om mailen har @stud.ntnu.no i seg. Denne sjekken kan gjøres med for eksempel RegExp, str.split eller lignende.</p>
           </li>
           <li>
-            <p>Kunne få matcher <i>(dvs å lagre matcher i en <b>fil</b> og kunne "swipe" mellom matcher)</i></p>
+            <p><b>Kunne få matcher <i>(dvs å lagre matcher i en <b>fil</b> og kunne "swipe" mellom matcher):</i></b><br>
+            Alle matchene er lagret som objekt. Vi tenker å konstruere disse via en object constructor når siden blir loadet. I disse objektene skal selvfølgelig navn, info og lignende ligge, men også forhåndsbestemte svar (les sjekkelinjer) til chat og lignende. Grunnen til å bruke objekt er at disse er lette å aksessere og bidrar til modularitet og bedre flyt i koden. </p>
           </li>
           <li>
-            <p>Funksjonaliteter som minner om en chattebot</p>
+            <p><b>Funksjonaliteter som minner om en chattebot</b><br>
+            Når man får en match blir det sendt en melding automatisk. Vi har så eventListener(e) som blir trigget når brukeren sender en melding (for eksempel ved å trykke på enter, eller en send knapp), og ved trigging skal sende en melding.</p>
           </li>
           <li>
-            <p>Muligheten til å rulle seg til toppen av siden</p>
+            <p><b>Muligheten til å rulle seg til toppen av siden</b><br>
+            Vi bruker setInterval sammen med window.scrollTo til å scrolle opp til toppen av siden fra nåværende posisjon på en glatt måte. For å få rett høyde igjen til toppen bruker vi getBoundingClientRect().y</p>
           </li>
           <li>
             <p><i>Dette er ikke en del av js applikasjonene, men er verdt å nevne ettersom det krever en del arbeid.</i></p>
-            <p>Cookies, local storage og local sessions vil vi ha til å virke mellom alle sidene våre</p>
+            <p><b>Cookies, local storage og local sessions vil vi ha til å virke mellom alle sidene våre</b><br>
+            Vi er ikke helt sikker på hvordan vi skal løse dette, men vi håper å kunne lagre et JSON-objekt (eller noe lignende) med informasjon om brukeren som en cookie (eller ved andre nevnte teknologier). Dette er en svært dårlig sikkerhetspraksis, men gir oss muligheten til å ha en slags "lokal backend" på nettsiden vår.</p>
           </li>
         </ul>
-        <p><i>Vi trenger litt mer in-depth på hvordan dette kan løses, hør med Markus om han vil fikse.</i></p>
         <p>Hvem som gjør hva og når det skal gjøres finner du i den siste seksjonen.</p>
       </div>
     </div>
