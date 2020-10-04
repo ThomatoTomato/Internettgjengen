@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-#heading h1, p {
+#heading h1, p{
   margin: 0;
   text-align: center;
 }
@@ -51,4 +51,48 @@ p {
 
 table, td {
   border: solid 1px black;
+}
+
+.listHead {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
+@font-face {
+  font-family: 'futuristic armour';
+    src: url('futuristic_armour-webfont.woff2') format('woff2'),
+         url('futuristic_armour-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'horizon';
+  src: url('horizon-webfont.woff2') format('woff2'),
+       url('horizon-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cooper hewitt heavy';
+  src: url('cooperhewitt-heavy_allfont.net-webfont.woff2') format('woff2'),
+       url('cooperhewitt-heavy_allfont.net-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open sans light';
+  src: url('OpenSans-Light-webfont.eot');
+  src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Light-webfont.woff2') format('woff2'),
+       url('OpenSans-Light-webfont.woff') format('woff'),
+       url('OpenSans-Light-webfont.ttf') format('truetype'),
+       url('OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
