@@ -4,7 +4,7 @@ Hei og velkommen til internettgjengen siden egen github side. Ja det er faktisk 
 ---
 
 ## Hva gjør internettgjengen nå?  
-Alle er spente på hva internettgjengen bedriver med nå, og spenn setebeltet for dette kommer til å være helt vilt. Vi planlegger å lage det første spillet av sin sort, som vi kaller for et datingspill. 
+Alle er spente på hva internettgjengen bedriver med nå, og spenn setebeltet for dette kommer til å være helt vilt. Vi planlegger å lage det første spillet av sin sort, som vi kaller for et datingspill. Foreløpig tester vi nettsiden på et domenet som er hosta av NTNU. Du finner den her: [internettgjengen.org.ntnu.no/](internettgjengen).
 
 **Hva er et datingsspill?**  
 Takk for at du spurte. Et datingsspill er et slags spill som ligner veldig mye på PvP, som League og Legends eller andre lignende spill du finner i butikken. Den store forskjellen er at hvem som er din rival og hvem som er din lagkamerat er helt opp til deg. Målet med spillet er at DU skal faktisk klare å finne en person du kan være såpass glad i å kalle kjæreste. Ja, et datingsspill er et spill som foregår i virkeligheten gjennom det vi kaller for en internett applikasjon. Dette spillet er så enkelt at du bare logger deg på det vi liker å kalle for nettsiden vår, hvor du lager deg en ny bruker og leter etter nye matcher.
@@ -33,4 +33,7 @@ Matcher.js | Andrine | 25.10.20
 Scrolling.js | Sarah | 25.10.20
 Chattebot.js | Alle | 25.10.20
 testStart | Alle | 25.10.20
-style.css | Alle | 28.10.20
+style.css | Alle | 28.10.20  
+
+**Hvordan kan jeg støtte internettgjengen på sin reise?**  
+Internettgjengen har faktisk sin helt egen patreon side! Hva er en patreon side spør du? Jo, for 2 uker siden etter vi lagde internettet tok vi kontakt med noen mennesker som hadde en helt fantastisk idee om å støtte skapere om i hele verden. Det eneste problemet var at de ikke visste hvor de skulle legge ut denne tjenesten. Internettgjengen hadde dermed den mest revolusjonerende løsningen i hele menneskets historie, lage en **ny** nettside! Ja, med andre ord finner du internettgjengen på patreon og du kan støtte oss der! *(internettgjengen har ikke patreon)*
