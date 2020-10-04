@@ -4,7 +4,7 @@ Hei og velkommen til internettgjengen siden egen github side. Ja det er faktisk 
 ---
 
 ## Hva gjør internettgjengen nå?  
-Alle er spente på hva internettgjengen bedriver med nå, og spenn setebeltet for dette kommer til å være helt vilt. Vi planlegger å lage det første spillet av sin sort, som vi kaller for et datingspill. Foreløpig tester vi nettsiden på et domenet som er hosta av NTNU. Du finner den her: internettgjengen.org.ntnu.no/
+Alle er spente på hva internettgjengen bedriver med nå, og spenn setebeltet for dette kommer til å være helt vilt. Vi planlegger å lage det første spillet av sin sort, som vi kaller for et datingspill. Foreløpig tester vi nettsiden på et domenet som er hosta av NTNU. Du finner den her: [internettgjengen.org.ntnu.no/](internettgjengen).
 
 **Hva er et datingsspill?**  
 Takk for at du spurte. Et datingsspill er et slags spill som ligner veldig mye på PvP, som League og Legends eller andre lignende spill du finner i butikken. Den store forskjellen er at hvem som er din rival og hvem som er din lagkamerat er helt opp til deg. Målet med spillet er at DU skal faktisk klare å finne en person du kan være såpass glad i å kalle kjæreste. Ja, et datingsspill er et spill som foregår i virkeligheten gjennom det vi kaller for en internett applikasjon. Dette spillet er så enkelt at du bare logger deg på det vi liker å kalle for nettsiden vår, hvor du lager deg en ny bruker og leter etter nye matcher.
