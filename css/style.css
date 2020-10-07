@@ -1,0 +1,17 @@
+body {
+  background-color: #2867bb;
+}
+
+.box {
+  border: solid 12px #004aad;
+  width: fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+}
+
+.content {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
