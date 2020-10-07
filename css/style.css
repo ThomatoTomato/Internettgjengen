@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'futuristic armour';
+      src: url('fonts/futuristic_armour-webfont.woff2') format('woff2'),
+           url('fonts/futuristic_armour-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'horizon';
+    src: url('fonts/horizon-webfont.woff2') format('woff2'),
+         url('fonts/horizon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'cooper hewitt heavy';
+    src: url('fonts/cooperhewitt-heavy_allfont.net-webfont.woff2') format('woff2'),
+         url('fonts/cooperhewitt-heavy_allfont.net-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'open sans light';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
