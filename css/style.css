@@ -29,6 +29,15 @@ body {
   padding: 0;
 }
 
+.large {
+  position: absolute;
+  border: solid 12px #004aad;
+  background-color: white;
+  display: block;
+  height: 60%;
+  width: 72%;
+}
+
 .title {
   position: relative;
   top: -35%;

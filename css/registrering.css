@@ -1,8 +1,37 @@
-.box {
-    border: solid 12px #004aad;
-    width: 500px;
-    height: 500px;
-    width: -moz-fit-content;
-    height: -moz-fit-content;
-  }
+.formContainer {
+    display: inline-flex;
+    flex-direction: row;
+}
 
+.formDiv {
+    align-self: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+input {
+    height: 30px;
+    background-color: #eff3fa;
+}
+
+textarea {
+    background-color: #eff3fa;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    resize: none;
+}
+
+header {
+    margin-top: -8.5%;
+    text-align: center;
+    color: #eff3fa;
+    font-family: Cooper Hewitt Heavy;
+    
+}
+
+#img{
+    height: 30%; /*Vil ha denne like bred som bio boksen som er 27colums*/
+    width: 85%; /*Vil også ha ramme på denne som for de andre*/
+}
