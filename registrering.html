@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registrering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registrering.css">
+  </head>
+  <body>
+    <div class="box">
+      <div class="content">
+        <form>
+          <label for="NTNU-email">NTNU-email:</label>
+          <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <!-- Her må jeg fikse at mailen må slutte på @stud.ntnu.no-->
+          <label for="passord">Passord:</label>
+          <input type="password" id="passord" name="passord" required><br><br>
+          <label for="gpassord">Gjenta passord:</label> <!-- Her er det foreløpig ingenting som krever at passorden skal være like-->
+          <input type="password" id="gpassord" name="gpassord" required><br><br>
+          <label for="Født">Fødselsdato:</label>
+          <input type="date" id="Født" name="Født" required><br><br> 
+          <label for="navn">Navn</label>
+          <input type="text" id="navn" name="navn" required><br><br>
+          <label for="Verv">Verv</label>
+          <input type="text" id="verv" name="verv"><br><br>  
+          <label for="Interesser">Interesser</label>
+          <input type="text" id="Interesser" name="Interesser"><br><br>
+          <label for="Karakter">Karakter i Exphil</label> 
+          <select id="Karakter" name="Karakter i Exphil" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F2">Har ikke tatt Exphil</option>
+          </select>   
+          <input type="submit" value="Submit">
+      </form>
+      </div>
+    </div>
+    
+  </div>
+</body>

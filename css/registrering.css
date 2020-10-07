@@ -1,0 +1,8 @@
+.box {
+    border: solid 12px #004aad;
+    width: 500px;
+    height: 500px;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+  }
+
