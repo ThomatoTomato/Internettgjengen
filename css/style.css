@@ -1,17 +1,75 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #2867bb;
 }
 
 .box {
-  border: solid 12px #004aad;
-  width: fit-content;
-  height: fit-content;
-  width: -moz-fit-content;
-  height: -moz-fit-content;
+  height: 100vh;
+  width: 100vw;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.content {
-  width: 200px;
-  height: 200px;
+.medium {
+  position: absoulute;
+  border: solid 12px #004aad;
   background-color: white;
+  display: block;
+  height: 60%;
+  width: 36%;
+  align-self: auto;
+  margin: 4%;
+  padding: 0;
+}
+
+.title {
+  position: relative;
+  top: -35%;
+  font-family: 'futuristic armour';
+  font-size: 300%;
+  color: #ff66c4;
+  text-shadow: 2px 2px #7da2d5;
+}
+
+@font-face {
+  font-family: 'futuristic armour';
+    src: url('fonts/futuristic_armour-webfont.woff2') format('woff2'),
+         url('fonts/futuristic_armour-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: 'horizon';
+src: url('fonts/horizon-webfont.woff2') format('woff2'),
+   url('fonts/horizon-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'cooper hewitt heavy';
+src: url('fonts/cooperhewitt-heavy_allfont.net-webfont.woff2') format('woff2'),
+   url('fonts/cooperhewitt-heavy_allfont.net-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'open sans light';
+src: url('fonts/OpenSans-Light-webfont.eot');
+src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+   url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+   url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+   url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+   url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+font-weight: normal;
+font-style: normal;
 }
