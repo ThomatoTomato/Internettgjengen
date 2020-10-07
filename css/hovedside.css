@@ -1,0 +1,23 @@
+.title {
+    position: relative;
+    top: max(-20vh, -17vw);
+    font-family: 'horizon';
+    font-size: min(5vh, 3vw);
+    color: #ff66c4;
+    text-shadow: 2px 2px #7da2d5;
+}
+
+h1 {
+    position: relative;
+    top: -min(5vh, 3vw);
+}
+
+#lan {
+    position: fixed;
+    display: block;
+    z-index: 987314897234987892342349;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(20vh, 12vw);
+    height: min(20vh, 12vw);
+}
