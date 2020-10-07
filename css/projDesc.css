@@ -7,6 +7,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+p {
+  padding: 8px 0;
+}
+
+a {
+  color: orangered;
+}
+
 #heading h1, p {
   margin: 0;
   text-align: center;
