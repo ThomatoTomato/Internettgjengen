@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registrering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registrering.css">
+  </head>
+ 
+  <body>
+    <div class="box">
+      <div class="large">
+        <header>
+          <h1>NEW PLAYER</h1>
+        </header>
+        <form>
+          <div class="formContainer">
+            <div class="formDiv">
+              <label for="NTNU-email">NTNU-email:</label><br>
+              <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br> <!-- Her må jeg fikse at mailen må slutte på @stud.ntnu.no-->
+              <label for="passord">Passord:</label><br>
+              <input type="password" id="passord" name="passord" required><br><br>
+              <label for="gpassord">Gjenta passord:</label><br> <!-- Her er det foreløpig ingenting som krever at passorden skal være like-->
+              <input type="password" id="gpassord" name="gpassord" required><br><br>
+              <label for="Født">Fødselsdato:</label><br>
+              <input type="date" id="Født" name="Født" required><br><br> 
+            </div>
+
+            <div class="formDiv">
+              <label for="navn">Navn:</label><br>
+              <input type="text" id="navn" name="navn" required><br><br>
+
+              <label for="Verv">Verv:</label><br>
+              <input type="text" id="verv" name="verv"><br><br>  
+              
+              <label for="Interesser">Interesser:</label><br>
+              <input type="text" id="Interesser" name="Interesser"><br><br>
+
+              <label for="Karakter">Karakter i Exphil:</label><br>
+              <select id="Karakter" name="Karakter i Exphil" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F2">Har ikke tatt Exphil</option>
+              </select>   
+              <input type="submit" value="Submit"> <!--Denne knappen må flyttes til en bedre plass-->
+            </div>
+
+            <div class=formDiv>
+              <label for="img">Last opp et profilbilde:</label><br>
+              <input type="file" id="img" name="img" accept="image/x-png,image/gif,image/jpeg"> <br><br><!-- Får forsatt lov å laste opp et doc eller pdf om jeg vil....-->
+              <label for="bio">Skriv en kort profiltekst:</label><br>
+              <textarea name="bio" id="bio" cols="27" rows="7" maxlength="130" placeholder="Maks 130 tegn."></textarea><br><br><!--Kan skrive 65 tegn i bio, relativt tifeldig valgt tall foreløpig-->
+              
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+    
+  </div>
+</body>
