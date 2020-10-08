@@ -9,23 +9,13 @@
     <link rel="stylesheet" href="css/hovedside.css">
   </head>
   <body>
-    <script>
-      function back() {
-        document.getElementById("side2").style = "display: none;"
-        document.getElementById("hjerte").style = "display: none;"
-        document.getElementById("side1").style = "display: block;"
-      }
-
-      function chat() {
-        document.getElementById("side1").style = "display:none;"
-        document.getElementById("side2").style = "display:inline-flex;"
-        document.getElementById("hjerte").style = "display:block"
-      }
-    </script>
     <div class="box">
       <img id="hjerte" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
       <a href="registrering.html"><img id="profil" src="img/elementer/profil.png" alt="profil"></a>
       <div id="side1" class="box">
+        <div id="dinMatch" class="title">
+          <h1>DU HAR FÅTT EN NY MATCH</h1>
+        </div>
         <img id="bheart" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
       </div>
       <div id="side2" class="box">
@@ -39,4 +29,5 @@
         </div>
       </div>
     </div>
+    <script src="scripts/hovedside.js"></script>
   </body>
