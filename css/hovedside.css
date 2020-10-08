@@ -21,3 +21,7 @@ h1 {
     width: min(20vh, 12vw);
     height: min(20vh, 12vw);
 }
+
+#side1 {
+    display: none;
+}

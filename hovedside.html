@@ -9,17 +9,27 @@
     <link rel="stylesheet" href="css/hovedside.css">
   </head>
   <body>
+    <script>
+      function back() {
+        document.getElementById("side2").style = "display: none"
+        document.getElementById("side1").style = "display: block"
+      }
+    </script>
     <div class="box">
-      <img id="hjerte" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte">
+      <img id="hjerte" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
       <img id="profil" src="img/elementer/profil.png" alt="profil">
-      <img id="lan" src="img/elementer/logo.png" alt="LAN">
-      <div class="medium">
-        <div class="title"><h1>DIN MATCH:</h1></div>
+      <div id="side1" class="box">
 
       </div>
-      <div class="medium">
-        <div class="title"><h1>CHAT:</h1></div>
+      <div id="side2" class="box">
+        <img id="lan" src="img/elementer/logo.png" alt="LAN">
+        <div class="medium">
+          <div class="title"><h1>DIN MATCH:</h1></div>
 
+        </div>
+        <div class="medium">
+          <div class="title"><h1>CHAT:</h1></div>
+        </div>
       </div>
     </div>
   </body>
