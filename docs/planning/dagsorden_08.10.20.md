@@ -22,6 +22,7 @@
 
 5. Eventuelt
    1. Har Sarah fått svar fra Pål?
+   2. Arbeidsaften
 
 6. Møtekritikk
    1. Var det noe som ble gjort bra eller dårlig under møtet?
