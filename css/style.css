@@ -18,6 +18,10 @@ body {
   height: var(--lengde);
 }
 
+#hjerte:hover, #bheart:hover {
+  cursor: pointer;
+}
+
 #profil {
   margin: 0;
   padding: 0;

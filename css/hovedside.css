@@ -34,7 +34,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15%;
+    margin-top: 15%;
     animation: beat 1s infinite;
   }
   
