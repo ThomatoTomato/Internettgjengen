@@ -1,6 +1,7 @@
 .formContainer {
     display: inline-flex;
     flex-direction: row;
+    position: relative;
 }
 
 .formDiv {
@@ -13,14 +14,13 @@
 input {
     height: 30px;
     background-color: #eff3fa;
+    border: none;
 }
 
 textarea {
     background-color: #eff3fa;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
     resize: none;
+    border: none;
 }
 
 header {
@@ -34,4 +34,13 @@ header {
 #img{
     height: 30%; /*Vil ha denne like bred som bio boksen som er 27colums*/
     width: 85%; /*Vil også ha ramme på denne som for de andre*/
+    border: 4px solid #ffbd59;
+}
+
+#knapp{
+    height: 20%;
+    position: absolute; /**/
+    bottom: 0;
+    
+
 }
