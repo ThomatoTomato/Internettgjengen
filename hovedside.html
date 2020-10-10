@@ -4,19 +4,30 @@
     <meta charset="utf-8">
     <title>Hovedside</title>
 
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hovedside.css">
   </head>
   <body>
     <div class="box">
-      <div class="medium">
-        <div class="title"><h1>DIN MATCH</h1></div>
+      <img id="hjerte" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
+      <a href="registrering.html"><img id="profil" src="img/elementer/profil.png" alt="profil"></a>
+      <div id="side1" class="box">
+        <div id="dinMatch" class="title">
+          <h1>DU HAR FÅTT EN NY MATCH</h1>
+        </div>
+        <img id="bheart" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
+      </div>
+      <div id="side2" class="box">
+        <img id="lan" src="img/elementer/logo.png" alt="LAN">
+        <div class="medium">
+          <div class="title"><h1>DIN MATCH:</h1></div>
 
         </div>
         <div class="medium">
-          <div class="title"><h1>CHAT</h1></div>
-
+          <div class="title"><h1>CHAT:</h1></div>
         </div>
       </div>
     </div>
+    <script src="scripts/hovedside.js"></script>
   </body>
