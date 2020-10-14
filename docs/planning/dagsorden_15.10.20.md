@@ -8,7 +8,7 @@
        1. Korona og live testing
 2. Innsjekk
    1. Hva skjer internettgjengen?
-   2. Dagens innsjekkspørsmål
+   2. Hvis du måtte tro på en konspirasjonsteori, hvilken ville det vært?
 3. Status
    1. Hva er det folk har gjort? Er det noe gruppen vil vise fram til de andre?
 4. Oppsummering om hva som er viktig for programmeringsdelen
