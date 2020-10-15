@@ -1,0 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  #quote {
+    font-size: 20px;
+    text-align: center;
+    font-family: "horizon";
+  }

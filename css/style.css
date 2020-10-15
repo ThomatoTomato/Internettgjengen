@@ -10,13 +10,15 @@ body {
   font-size: larger;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "cooper hewitt heavy";
+  color: white;
+  text-shadow: -4px -1px #7da2d5;
 }
 
 #hjerte {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   position: absolute;
   top: 2px;
   left: 2px;
@@ -40,7 +42,7 @@ h1 {
 
 #profil {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   position: absolute;
   top: 2px;
   right: 2px;
@@ -102,4 +104,40 @@ h1 {
 
 label {
   color: black;
+
+/* INFORMASJONSSIDER */ 
+
+#content {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 5vh;
+}
+
+#content h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+#content h2 {
+  margin-bottom: 0;
+}
+
+#content p {
+  margin-top: 0;
+}
+
+#secondHeading, #secondHeadingText {
+  text-align: right;
+}
+
+/* styler navigasjon til topp */
+#scrollTop {
+  position: fixed;
+  bottom: 2px;
+  right: 10px;
+
+  color: inherit;
+  font-weight: bold;
 }
