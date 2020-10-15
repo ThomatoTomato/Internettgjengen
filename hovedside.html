@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title>Hovedside</title>
+    <title>Love @ NTNU</title>
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hovedside.css">
   </head>
-  <body>
-    <div class="box">
-      <img id="hjerte" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
-      <a href="profil.html"><img id="profil" src="img/elementer/profil.png" alt="profil"></a>
-      <div id="side1" class="box">
-        <div id="dinMatch" class="title">
-          <h1>DU HAR FÅTT EN NY MATCH</h1>
-        </div>
-        <img id="bheart" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
-      </div>
-      <div id="side2" class="box">
-        <img id="lan" src="img/elementer/logo.png" alt="LAN">
-        <div class="medium">
-          <div class="title"><h1>DIN MATCH:</h1></div>
 
+  <body>
+    <div class="screen">
+      
+      <img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
+
+      <a href="profil.html"><img id="profil" class="iconoclast" src="img/elementer/profil.png" alt="Profilikon"></a>
+
+      <div id="side1" class="tower">
+
+        <h1 class="flexable">DU HAR EN NY MATCH</h1>
+        <img id="bheart" class="flexable" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
+      
+      </div>
+
+      <div id="side2" class="chain screen">
+        
+        
+        <div class="tower flexable">
+          
+          <h1 class="match">DIN MATCH:</h1>
+          <div id="profil" class="box">
+            <img src="img/profilbilder/E1.jpg" alt="meg!">
+          </div>
         </div>
-        <div class="medium">
-          <div class="title"><h1>CHAT:</h1></div>
+        
+        <div id="smallHack">
+          <img id="lan" src="img/elementer/logo.png" alt="LAN">
+        </div>
+        
+        <div class="tower flexable">
+          <h1 class="match">CHAT:</h1>
+
+          <div class="box"></div>
         </div>
       </div>
     </div>
+
     <script src="scripts/hovedside.js"></script>
   </body>
