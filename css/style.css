@@ -5,11 +5,13 @@ html, body {
 
 body {
   background-color: #2867bb;
+  font-family: 'open sans light';
+  color: white;
+  font-size: larger;
 }
 
 h1 {
   font-family: "cooper hewitt heavy";
-  color: white;
 }
 
 #hjerte {
@@ -27,8 +29,7 @@ h1 {
   position: fixed;
   display: block;
   z-index: 987314897234987892342349;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 15vh;
   width: min(20vh, 12vw);
   height: min(20vh, 12vw);
 }
@@ -58,17 +59,26 @@ h1 {
   align-items: center;
 }
 
+.tower {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .medium {
   position: absoulute;
   border: solid 12px #004aad;
   background-color: white;
   display: block;
-  height: 60%;
+  height: 60vh;
   width: 36%;
   min-height: 50px;
   min-width: 50px;
   align-self: auto;
-  margin: 3%;
+  margin: 3%; 
   padding: 0;
 }
 
@@ -88,4 +98,8 @@ h1 {
   font-size: 300%;
   color: #ff66c4;
   text-shadow: 2px 2px #7da2d5;
+}
+
+label {
+  color: black;
 }
