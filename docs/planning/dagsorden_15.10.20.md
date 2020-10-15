@@ -2,15 +2,19 @@
 
 1. Møte med Pål
     1. Hva er viktig å dekke i P3?
-    2. Hvordan er det vi best kan jobbe videre med prosjektet for å få det ferdig?
-    4. Hvilke platformer er det nettsiden bør virke på? Holder det med kun chromium eller burde vi også ha støtte for firefox og internett explorer?
-    5. Eventuelle spørsmål om testing
+    2. Er Horizon lesbart?
+    3. Hvordan skal vi dokumentere ting?
+    4. Hvordan er det vi best kan jobbe videre med prosjektet for å få det ferdig?
+    5. Hvilke platformer er det nettsiden bør virke på? Holder det med kun chromium eller burde vi også ha støtte for firefox og internett explorer?
+    6. Eventuelle spørsmål om testing
        1. Korona og live testing
 2. Innsjekk
    1. Hva skjer internettgjengen?
    2. Hvis du måtte tro på en konspirasjonsteori, hvilken ville det vært?
 3. Status
    1. Hva er det folk har gjort? Er det noe gruppen vil vise fram til de andre?
+   2. Sarah, har vi fått de dokumentene vi trenger fra indok?
+   3. Er det noen dummy templates som vi virkelig trenger eller går alt bra for nå?
 4. Oppsummering om hva som er viktig for programmeringsdelen
    1. Hva må du passe på at koden din din tilfredstiller?
       1. Siden er valid
