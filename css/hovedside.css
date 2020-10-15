@@ -1,11 +1,15 @@
 .title {
-    position: relative;
-    top: max(-12vh, -11vw);
-    font-size: min(5vh, 3vw);
+    /* position: relative;
+    top: max(-12vh, -11vw); */
+    font-size: 3vw;
 }
 
 .medium .title h1 {
     color: #ff66c4;
+}
+
+.tower {
+    justify-content: flex-start;
 }
 
 #dinMatch {
