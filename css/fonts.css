@@ -33,3 +33,11 @@ src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
 font-weight: normal;
 font-style: normal;
 }
+
+.coop {
+  font-family: "cooper hewitt heavy";
+}
+
+.future {
+  font-family: "futuristic armour";
+}

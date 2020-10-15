@@ -23,6 +23,16 @@ h1 {
   height: var(--lengde);
 }
 
+#lan {
+  position: fixed;
+  display: block;
+  z-index: 987314897234987892342349;
+  margin-left: auto;
+  margin-right: auto;
+  width: min(20vh, 12vw);
+  height: min(20vh, 12vw);
+}
+
 #hjerte:hover, #bheart:hover {
   cursor: pointer;
 }
@@ -74,7 +84,7 @@ h1 {
 .title {
   position: relative;
   top: -35%;
-  font-family: 'futuristic armour';
+  font-family: 'cooper hewitt heavy';
   font-size: 300%;
   color: #ff66c4;
   text-shadow: 2px 2px #7da2d5;
