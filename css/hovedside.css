@@ -1,13 +1,11 @@
 .title {
     position: relative;
     top: max(-12vh, -11vw);
-    font-family: 'cooper hewitt heavy';
     font-size: min(5vh, 3vw);
 }
 
 .medium .title h1 {
     color: #ff66c4;
-    text-shadow: -4px -1px #7da2d5;
 }
 
 #dinMatch {

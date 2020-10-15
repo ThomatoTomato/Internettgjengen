@@ -34,16 +34,3 @@ font-weight: normal;
 font-style: normal;
 }
 
-.coop {
-  font-family: "cooper hewitt heavy";
-}
-
-/* styler futuristic armor */
-.future {
-  position: relative;
-  top: -35%;
-  font-family: 'futuristic armor';
-  font-size: 300%;
-  color: #ff66c4;
-  text-shadow: 2px 2px #7da2d5;
-}
