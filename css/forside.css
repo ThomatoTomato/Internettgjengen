@@ -1,35 +1,27 @@
-.medium {
-    height: 48vh;
-    width: 22%;
-    margin: 1% 3%;
+#side, #intro {
+    justify-content: space-around;
+}
 
+.box {
+    width: 500px;
+    height: 500px;
+    margin: 0 3%;
+}
+
+#innhold {
+    margin: 20px 0;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 400%;
+    margin: 0 3%;
 }
 
 p {
     text-align: center;
     font-size: 200%;
     font-family: cooper hewitt heavy;
-}
-
-#title {
-    margin: 20px 0 0 0;
-    padding: 0;
-    font-size: 500%;
-}
-
-#boxes {
-    height: 100vh;
-}
-
-#hbox > a {
-    margin: 0;
-    text-align: center;
-    font-family: 'cooper hewitt heavy';
-    font-size: 180%;
-}
-
-a > h1 {
-    margin: 0;
 }
 
 #htp {
@@ -43,10 +35,7 @@ a > h1 {
 }
 
 #hjerteboks {
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    justify-items: center;
 }
 
 #hjerteboks > img {

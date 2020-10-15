@@ -1,7 +1,7 @@
 function back() {
     document.getElementById("side2").style = "display: none;"
     document.getElementById("hjerte").style = "display: none;"
-    document.getElementById("side1").style = "display: block;"
+    document.getElementById("side1").style = "display: flex;"
   }
 
 function chat() {

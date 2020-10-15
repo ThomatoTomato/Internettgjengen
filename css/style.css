@@ -5,24 +5,29 @@ html, body {
   /* Dette er noe som er veldig ulikt meg (Thomas), men vi kan faktisk definere globale variabler :scream: Fordelen ved å gjøre det slik i et markeringsspråk er at vi kun trenger å endre på denne ene tingen for å endre mer ting. */
 
   --eksempel: 2em;
-  --minHeight: 50vh;
-  --minWidth: 50vw;
+  --minHeight: 500px;
+  --minWidth: 500px;
 
   /* Forstår ikke hvordan dette virker eller om det virker */
-  /* min-width: var(--minWidth);
-  min-height: var(--minHeight); */
+  min-width: var(--minWidth);
+  min-height: var(--minHeight);
 }
 
 body {
   background-color: #2867bb;
   font-family: 'open sans light';
   color: white;
+
+  height: 100vh;
+  width: 100vw;
 }
 
 h1, h2, h3 {
   font-family: "cooper hewitt heavy";
   color: white;
+  font-size: 300%;
   text-shadow: -4px -1px #032a5d;
+  text-align: center;
 }
 
 .iconoclast {
@@ -47,20 +52,24 @@ h1, h2, h3 {
 }
 
 #lan {
-  position: fixed;
   display: block;
-  z-index: 100;
-  margin: 0 auto 15vh;
+  margin: 0 auto;
 
-  
-  width: min(20vh, 12vw);
-  height: min(20vh, 12vw);
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+  z-index: 100;
+
+  --size: 200px;
+  width: var(--size);
+  height: var(--size);
 }
 
 #hjerte:hover, #bheart:hover {
   cursor: pointer;
 }
 
+/* Ting som kan være nyttig når man lager divs */
 .screen {
   height: 100vh;
   width: 100vw;
@@ -77,22 +86,26 @@ h1, h2, h3 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
-  align-items: stretch;
+  align-items: center;
 }
 
-/* .medium {
+/* Gjør slik at ting krymper likt med andre, men ikke vokser. Vet du hva, jeg vet egentlig ikke hva dette gjør, det bare virkert smart. */
+.flexable {
+  flex: 0 1 auto;
+}
+
+.box {
   border: solid 12px #004aad;
   background-color: white;
   display: block;
-  height: 60vh;
-  width: 36%;
-  min-height: 50px;
-  min-width: 50px;
+  min-height: var(--minHeight);
+  min-width: var(--minWidth);
   align-self: auto;
   margin: 3%; 
   padding: 0;
 }
 
+/*
 .large {
   border: solid 12px #004aad;
   background-color: white;
@@ -101,6 +114,14 @@ h1, h2, h3 {
   width: 72%; 
 } */
 
+/* Liten hack for hovedsiden og forsiden */
+#smallHack {
+  /* position: absolute; */
+  width: 1px;
+  height: 1px;
+}
+
+/* Denne gjelder for de sidene vi har skjemaer */
 label {
   color: black;
 }
