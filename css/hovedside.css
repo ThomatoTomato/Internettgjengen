@@ -37,16 +37,6 @@ h1 {
     margin-right: auto;
 }
 
-#lan {
-    position: fixed;
-    display: block;
-    z-index: 987314897234987892342349;
-    margin-left: auto;
-    margin-right: auto;
-    width: min(20vh, 12vw);
-    height: min(20vh, 12vw);
-}
-
 #side1 {
     display: block;
 }
