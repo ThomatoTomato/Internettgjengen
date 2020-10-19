@@ -1,5 +1,64 @@
-.medium {
-    height: 48%;
-    width: 22%;
+#side, #intro {
+    justify-content: space-around;
 }
 
+.box {
+    width: 500px;
+    height: 500px;
+    margin: 0 3%;
+}
+
+#innhold {
+    margin: 20px 0;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 400%;
+    margin: 0 3%;
+}
+
+p {
+    text-align: center;
+    font-size: 200%;
+    font-family: cooper hewitt heavy;
+}
+
+#htp {
+  color: #ff66c4;
+  text-shadow: 2px 2px #7da2d5;
+}
+
+#tv {
+  color: #ffeda3;
+  -webkit-stroke-color: #ffde59
+}
+
+#hjerteboks {
+    justify-content: space-evenly;
+}
+
+#hjerteboks > img {
+    --size: 15%;
+    width: var(--size);
+    height: var(--size);
+}
+
+.formContainer {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.formDiv {
+    align-self: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+input {
+    height: 30px;
+    background-color: #eff3fa;
+    border: none;
+}
