@@ -104,14 +104,23 @@ h1, h2, h3 {
   flex: 0 1 auto;
 }
 
-/*
-.large {
+.box {
   border: solid 12px #004aad;
   background-color: white;
   display: block;
-  height: 60%;
-  width: 72%; 
-} */
+  min-height: var(--minHeight);
+  min-width: var(--minWidth);
+  align-self: auto;
+  margin: 3%; 
+  padding: 0;
+}
+
+/*
+.large {
+  height: 60vh;
+  width: 72vw;
+  min-width: 800px; 
+}
 
 /* Liten hack for hovedsiden og forsiden */
 #smallHack {
