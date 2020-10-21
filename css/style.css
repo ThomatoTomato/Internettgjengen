@@ -75,6 +75,16 @@ h1, h2, h3 {
   width: 100vw;
 }
 
+.box {
+  border: solid 12px #004aad;
+  background-color: white;
+  min-height: var(--minHeight);
+  min-width: var(--minWidth);
+  align-self: auto;
+  margin: 3%; 
+  padding: 0;
+}
+
 .chain {
   display: inline-flex;
   flex-flow: row wrap;
@@ -92,17 +102,6 @@ h1, h2, h3 {
 /* Gjør slik at ting krymper likt med andre, men ikke vokser. Vet du hva, jeg vet egentlig ikke hva dette gjør, det bare virkert smart. */
 .flexable {
   flex: 0 1 auto;
-}
-
-.box {
-  border: solid 12px #004aad;
-  background-color: white;
-  display: block;
-  min-height: var(--minHeight);
-  min-width: var(--minWidth);
-  align-self: auto;
-  margin: 3%; 
-  padding: 0;
 }
 
 /*

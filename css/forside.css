@@ -1,5 +1,9 @@
-#side, #intro {
+#side {
     justify-content: space-around;
+}
+
+#intro {
+    justify-content: space-evenly;
 }
 
 .box {
@@ -35,27 +39,26 @@ p {
 }
 
 #hjerteboks {
-    justify-content: space-evenly;
+    max-width: 100%;
+    justify-content: space-around;
+    flex-flow: row nowrap;
 }
 
 #hjerteboks > img {
-    --size: 15%;
-    width: var(--size);
-    height: var(--size);
+    margin: 0 4%;
 }
 
-.formContainer {
-    display: inline-flex;
-    flex-direction: row;
-    position: relative;
+#form {
+    padding: 15px;
+    justify-content: space-around;
+    align-items: stretch;
+    font-size: 150%;
 }
 
-.formDiv {
-    align-self: auto;
-    margin-left: 50px;
-    margin-top: 10px;
+input {
+    max-width: 300px;
+    margin: 4px 0 20px 0;
 }
-
 
 input {
     height: 30px;
