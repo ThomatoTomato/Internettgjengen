@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registrering.css">
   </head>
- 
+
   <body>
     <a href="forside.html" > <img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte"></a><!--Riktig at denne skal gå tilbake til forsiden?-->
     <div class="tower">
       <h1>NEW PLAYER</h1>
-      <form class="box large">
+      <div class="box large">
         <div class="formContainer">
           <div class="formDiv">
             <label for="NTNU-email">NTNU-email:</label><br>
@@ -22,7 +22,7 @@
             <label for="gpassord">Gjenta passord:</label><br> <!-- Her er det foreløpig ingenting som krever at passorden skal være like. Fikses med JS senere-->
             <input type="password" id="gpassord" name="gpassord" required placeholder="***********"><br><br>
             <label for="Født">Fødselsdato:</label><br>
-            <input type="date" id="Født" name="Født" max="2002-12-31" required><br><br> 
+            <input type="date" id="Født" name="Født" max="2002-12-31" required><br><br>
           </div>
 
           <div class="formDiv">
@@ -31,7 +31,7 @@
 
             <label for="Verv">Verv:</label><br>
             <input type="text" id="verv" name="verv" placeholder="Eks. linjeforening, Samfundet"><br><br>  <!--Begrensing på hvor langt man kan skrive her?-->
-            
+
             <label for="Interesser">Interesser:</label><br>
             <input type="text" id="Interesser" name="Interesser" placeholder="Eks. finne et ledig grupperom"><br><br><!-- Eksempel teksten er for lang-->
 
@@ -45,7 +45,7 @@
               <option value="E">E</option>
               <option value="F">F</option>
               <option value="F2">Har ikke tatt Exphil</option>
-            </select>   
+            </select>
             <button type="submit" value="START SPILL" id="knapp"><img src="img/elementer/chatboble.png" width=50px/> <!--Denne knappen må flyttes til en bedre plass og bytt bilde fra chatteboble til det rette bildet!-->
           </div>
 
@@ -56,11 +56,11 @@
             <textarea name="bio" id="bio" cols="27" rows="7" maxlength="130" placeholder="Her kan du skrive hva du vil på maks 130 tegn."></textarea><br><br><!--Kan skrive 130  tegn i bio, relativt tifeldig valgt tall foreløpig-->
           </div>
         </div>
-    </form>
-        
+    </div>
+
     </div>
   </div>
-    
+  <script src="scripts/registrering.js" charset="utf-8"></script>
 </body>
 
 <!--Ting å fikse for reg og profil siden:
@@ -68,9 +68,9 @@
 2.Lagre/start spill knappene
 3.Placeholder for profilbilde
 4.Bare kunne laste opp jpg/png profilbilde og ikke pdf osv
-5.At siden ikke klikker når vinduet skaleres. 
+5.At siden ikke klikker når vinduet skaleres.
 6.Passord må være likt
-7.email må slutte på stud. 
+7.email må slutte på stud.
 8.Profil siden hva skal egt stå i rutene, gammel info eller info om hvordan oppdatere, og hvor skal evt annen infor være?
 9.Logg ut på profil
 10.Eksempel teksten på reg er lengre enn boksen.
