@@ -11,6 +11,15 @@ submit.addEventListener("click", function() {
   let interests = document.getElementById("Interesser").value;
   let grade = document.getElementById("Karakter").value;
 
+  if ( email.substring(email.length - 7) != "ntnu.no" ) 
+  {
+    window.alert("Oops! Her ser det ut som du ikke har brukt en NTNU-email!");
+  }
+  if ( password != gpassword )
+  {
+    window.alert("Pass på å skrive passordet likt i begge felt!")
+  }
+
 
 
   // Følgende kode skal gjøre iffffffff form validation er suksessfult.
