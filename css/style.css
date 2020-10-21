@@ -105,14 +105,11 @@ h1, h2, h3 {
   padding: 0;
 }
 
-/*
 .large {
-  border: solid 12px #004aad;
-  background-color: white;
-  display: block;
-  height: 60%;
-  width: 72%; 
-} */
+  height: 60vh;
+  width: 72vw;
+  min-width: 800px; 
+}
 
 /* Liten hack for hovedsiden og forsiden */
 #smallHack {
