@@ -19,8 +19,6 @@ login.addEventListener("click", function() {
       window.location.href = "hovedside.html";
     }
   }
-
-  window.location.href = "hovedside.html"
 });
 
 let registrering = document.getElementById("registrering")

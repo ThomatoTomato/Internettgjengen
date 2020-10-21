@@ -1,3 +1,19 @@
+{ //Lager et scope som copy paster informasjon fra forsiden, hvis det finnes
+  let sS = sessionStorage
+  let email = sS.getItem("emailReg")
+  let password = sS.getItem("passwordReg")
+  
+  if (email != "") {
+    document.getElementById("email").value = email
+  } 
+  if (password != "") {
+    document.getElementById("passord").value = password
+  }
+
+  sS.setItem("emailReg", "")
+  sS.setItem("passwordReg", "")
+}
+
 let submit = document.getElementById("knapp");
 
 submit.addEventListener("click", function() {
