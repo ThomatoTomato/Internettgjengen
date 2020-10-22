@@ -64,4 +64,6 @@ submit.addEventListener("click", function() {
   };
 
   localStorage.setItem("person" + localStorage.getItem("idIterator"), JSON.stringify(objectToBeStored));
+
+  window.location.href = "hovedside.html"
 });
