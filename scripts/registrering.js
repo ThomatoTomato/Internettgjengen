@@ -70,4 +70,5 @@ form.addEventListener("submit", function() {
   localStorage.setItem("person" + localStorage.getItem("idIterator"), JSON.stringify(objectToBeStored));
 
   window.location.href = "hovedside.html"
+  window.alert("i was here");
 });
