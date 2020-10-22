@@ -16,9 +16,9 @@
 }
 
 //let submit = document.getElementById("knapp");
-let form = document.getElementById("form");
+let submit = document.getElementById("knapp");
 
-form.addEventListener("submit", function() {
+submit.addEventListener("click", function() {
   // Her kommer form validation
   let email = document.getElementById("email").value;
   let password = document.getElementById("passord").value;

@@ -83,6 +83,8 @@ h1, h2, h3 {
   background-color: white;
   min-height: var(--minHeight);
   min-width: var(--minWidth);
+  max-height: var(--maxHeight);
+  max-width: var(--maxWidth);
   align-self: auto;
   margin: 3%; 
   padding: 0;

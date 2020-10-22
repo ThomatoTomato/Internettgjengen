@@ -1,0 +1,12 @@
+p {
+    color: black;
+    margin: 0 8px;
+}
+
+img {
+    margin: 0 8px;
+}
+
+.chain {
+    flex-flow: row nowrap
+}
