@@ -10,3 +10,12 @@ img {
 .chain {
     flex-flow: row nowrap
 }
+
+#side {
+    justify-content: flex-start;
+}
+
+#innhold {
+    width: inherit;
+    flex-flow: row wrap;
+}
