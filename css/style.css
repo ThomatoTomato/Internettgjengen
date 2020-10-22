@@ -25,6 +25,13 @@ body {
   width: 100vw;
 }
 
+a:link, a:visited 
+{
+  margin: 4px;
+  color: white;
+  text-decoration: none;
+}
+
 h1, h2, h3 {
   font-family: "cooper hewitt heavy";
   color: white;

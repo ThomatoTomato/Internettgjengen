@@ -1,10 +1,11 @@
 if (window.sessionStorage.getItem("activeUser") == null) 
 { 
-    if ( document.title == "Profil" || document.title == "Love @ NTNU" )
+    if ( document.head.id == "Forside" ) {}
+    else if ( document.title == "Profil" || document.title == "Love @ NTNU" )
     {
         window.location.href = "forside.html";
+        displayRegister(); 
     }
-    displayRegister(); 
 }
 else { displayHeartProfile(); }
 
