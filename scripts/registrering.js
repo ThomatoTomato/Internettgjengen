@@ -69,6 +69,7 @@ submit.addEventListener("click", function() {
 
   localStorage.setItem("person" + localStorage.getItem("idIterator"), JSON.stringify(objectToBeStored));
 
-  window.location.href = "hovedside.html"
-  window.alert("i was here");
+  let sessionStorage = window.sessionStorage;
+  sessionStorage.setItem("activeUser", JSON.stringify(objectToBeStored));
+  window.location.href = "hovedside.html";
 });

@@ -6,6 +6,10 @@ if (window.sessionStorage.getItem("activeUser") == null)
         window.location.href = "forside.html";
         displayRegister(); 
     }
+    else 
+    {
+        displayRegister();
+    }
 }
 else { displayHeartProfile(); }
 
