@@ -12,11 +12,19 @@ if (window.sessionStorage.getItem("activeUser") == null)
     }
 }
 else if (document.head.id == "Forside") {window.location.href = "hovedside.html"}
-else { displayHeartProfile(); }
+else if (document.title == "Profil") {
+    displayHeart()
+    displayLogout()
+
+}
+else { 
+    displayHeart();
+    displayProfil();
+}
 
 navigation();
 
-function displayHeartProfile() 
+function displayHeart() 
 { 
     // injecter hjertet
     console.log("Logga inn")
@@ -30,6 +38,10 @@ function displayHeartProfile()
     hjerte.appendChild(hjerte_img);
     
     document.body.insertBefore(hjerte, document.body.firstChild);
+}
+
+function displayProfil()
+{
 
     // injecter profilikonet
     let profil = document.createElement("a");
@@ -42,6 +54,18 @@ function displayHeartProfile()
     profil.appendChild(profil_img);
     
     document.body.insertBefore(profil, document.body.firstChild);
+}
+
+function displayLogout() {
+    // injiserer logg ut knapp
+    let register = document.createElement("BUTTON");
+    let text = document.createTextNode("Logg ut");
+    register.appendChild(text);
+    register.setAttribute("id", "registerButton");
+    register.setAttribute("class", "iconoclast");
+    register.setAttribute("onclick", "logout()");
+
+    document.body.insertBefore(register, document.body.firstChild);
 }
 
 function displayRegister() 
@@ -61,6 +85,13 @@ function displayRegister()
 
 // denne er teit men den er her fordi det ikke funka med lambda når jeg skulle sette attribute..
 function redirect() { window.location.href = 'registrering.html'; }
+
+function logout() {
+    if (window.confirm("Er du sikker på at du vil logge ut?")) {
+        sessionStorage.clear()
+        window.location.href = "forside.html"
+    }
+}
 
 // injecter footer
 function navigation() 
