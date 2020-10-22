@@ -41,7 +41,7 @@ h1 {
 
 #chatview {
     width: 100%;
-    max-width: calc(var(--minWidth) -  20px);
+    max-width: calc(var(--maxWidth) -  20px);
     height: 425px;
     border: solid 2px #004aad;
     color: black;
