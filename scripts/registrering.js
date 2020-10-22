@@ -1,4 +1,5 @@
-{ //Lager et scope som copy paster informasjon fra forsiden, hvis det finnes
+{ //Lager et scope som copy-paster informasjon fra forsiden man skriver inn i forsiden, hvis det finnes
+  //Denne informasjonen er lagret i sessionstorage og skal fjernes etter den er limt inn i formet.
   let sS = sessionStorage
   let email = sS.getItem("emailReg")
   let password = sS.getItem("passwordReg")
@@ -31,7 +32,7 @@ form.addEventListener("submit", function() {
   if ( email.substring(email.length - 7) != "ntnu.no" ) 
   {
     window.alert("Oops! Her ser det ut som du ikke har brukt en NTNU-email!");
-    return null
+    return null // Bruker denne for å hoppe
   }
   if ( password != gpassword )
   {

@@ -12,6 +12,23 @@ p {
 button {
     width: 40%;
     height: 30%;
+    border-radius: 40%;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+    color: white;
+    font-family: futuristic armor;
+    font-size: 40%;
+}
+
+button:first-child {
+    border: 5px solid #346dbc;
+    background-color: #7da2d5;   
+}
+
+button:last-child {
+    border: 5px solid #032a5d;
+    background-color: #004aad;
 }
 
 .box {
