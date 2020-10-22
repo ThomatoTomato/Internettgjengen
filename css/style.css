@@ -25,7 +25,11 @@ body {
   width: 100vw;
 }
 
-a:link, a:visited 
+footer {
+  text-align: center;
+}
+
+footer>p>a:link, footer>p>a:visited 
 {
   margin: 4px;
   color: white;
