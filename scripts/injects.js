@@ -44,8 +44,8 @@ function displayHeartProfile()
 }
 
 function displayRegister() 
-{ 
-    console.log("Ikke logga inn");
+{ /* 
+    console.log("Ikke logga inn"); */
 
     // injecter register-button
     let register = document.createElement("BUTTON");

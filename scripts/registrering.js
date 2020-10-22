@@ -16,7 +16,7 @@
 }
 
 //let submit = document.getElementById("knapp");
-let submit = document.getElementById("knapp");
+let submit = document.getElementById("registerButton");
 
 submit.addEventListener("click", function() {
   // Her kommer form validation
