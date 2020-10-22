@@ -41,6 +41,7 @@ h1 {
 
 #chatview {
     width: 100%;
+    max-width: calc(var(--minWidth) -  20px);
     height: 425px;
     border: solid 2px #004aad;
     color: black;
@@ -48,8 +49,34 @@ h1 {
     /* Scrolling */
     overscroll-behavior: contain;
     overflow: auto;
+    padding: 0 10px;
 }
 
+.userChatID
+{
+    color: orange;
+}
+
+.botChatID
+{
+    color: #ff66c4;
+}
+
+.botChatID, .userChatID 
+{
+    font-weight: bolder;
+}
+
+.chatMessage
+{
+    color: black;
+}
+
+.userChatID, .chatMessage, .botChatID
+{
+    display: inline;
+    font-size: larger;
+}
 
 #chatboble {
     width: 75px;
