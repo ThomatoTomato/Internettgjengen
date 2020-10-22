@@ -11,7 +11,7 @@ if (window.sessionStorage.getItem("activeUser") == null)
         displayRegister();
     }
 }
-else if (document.head.id = "Forside") {window.location.href = "hovedside.html"}
+else if (document.head.id == "Forside") {window.location.href = "hovedside.html"}
 else { displayHeartProfile(); }
 
 navigation();
