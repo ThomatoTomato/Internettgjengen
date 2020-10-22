@@ -7,6 +7,7 @@ if (window.sessionStorage.getItem("activeUser") == null)
         displayRegister(); 
     }
 }
+else if ( document.title == "Forside" ) {}
 else { displayHeartProfile(); }
 
 navigation();
