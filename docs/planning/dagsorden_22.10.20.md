@@ -7,10 +7,11 @@
 2. Status
    1. Hvordan går det med arbeidet? Vi tar en gjennomgang av hva folk har gjort.
    2. Vi tar en gjennomgang av tidsfristene og ser hvordan vi ligger i forhold til skjemaet.
-   
+
 3. Veien videre
    1. Vi må lage P3_changes og P4 dokumentet. Noen må gjøre dette.
    2. Mulig omfordeling av arbeid
+
 4. Eventuelt
    1. Er det noen eventuelt saker noen har?
 

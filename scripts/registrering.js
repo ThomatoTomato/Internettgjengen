@@ -14,9 +14,10 @@
   sS.setItem("passwordReg", "")
 }
 
-let submit = document.getElementById("knapp");
+//let submit = document.getElementById("knapp");
+let form = document.getElementById("form");
 
-submit.addEventListener("click", function() {
+form.addEventListener("submit", function() {
   // Her kommer form validation
   let email = document.getElementById("email").value;
   let password = document.getElementById("passord").value;
@@ -30,10 +31,12 @@ submit.addEventListener("click", function() {
   if ( email.substring(email.length - 7) != "ntnu.no" ) 
   {
     window.alert("Oops! Her ser det ut som du ikke har brukt en NTNU-email!");
+    return null
   }
   if ( password != gpassword )
   {
     window.alert("Pass på å skrive passordet likt i begge felt!")
+    return null
   }
 
 
