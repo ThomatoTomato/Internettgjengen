@@ -10,8 +10,8 @@ else { displayHeartProfile(); }
 
 function displayHeartProfile() 
 { 
-    // inserter hjertet
-    console.log("HeartProfile")
+    // injecter hjertet
+    console.log("Logga inn")
     var hjerte = document.createElement("a");
     hjerte.setAttribute("href", "hovedside.html");
     var hjerte_img = document.createElement("img");
@@ -23,7 +23,7 @@ function displayHeartProfile()
     
     document.body.insertBefore(hjerte, document.body.firstChild);
 
-    // inserter profilikonet
+    // injecter profilikonet
     var profil = document.createElement("a");
     profil.setAttribute("href", "profil.html");
     var profil_img = document.createElement("img");
@@ -38,17 +38,24 @@ function displayHeartProfile()
 
 function displayRegister() 
 { 
-    console.log("Register");
-    document.getElementById("hjerte").style = "display: none;"
-    document.getElementById("profil").style = "display: none;"
+    console.log("Ikke logga inn");
 
+    // injecter register-button
     var register = document.createElement("BUTTON");
     var text = document.createTextNode("Register");
     register.appendChild(text);
     register.setAttribute("id", "registerButton");
     register.setAttribute("class", "iconoclast");
     register.setAttribute("onclick", "redirect()");
+
     document.body.insertBefore(register, document.body.firstChild);
 }
 
+// denne er teit men den er her fordi det ikke funka med lambda når jeg skulle sette attribute..
 function redirect() { window.location.href = 'registrering.html'; }
+
+// injecter footer
+function navigation() 
+{
+    
+}
