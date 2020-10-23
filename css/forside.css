@@ -52,7 +52,7 @@ button:last-child {
 
 #htp {
   color: #ff66c4;
-  text-shadow: 2px 2px #7da2d5;
+  text-shadow: 4px 2px #7da2d5;
 }
 
 #tv {
@@ -71,7 +71,7 @@ button:last-child {
 }
 
 .pheart {
-    width: calc(100% / 6);
+    max-width: calc(100% / 6);
 }
 
 #form {

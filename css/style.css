@@ -119,7 +119,7 @@ h1, h2, h3 {
 }
 
 .chain {
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;

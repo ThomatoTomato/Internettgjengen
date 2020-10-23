@@ -35,9 +35,34 @@ h1 {
     animation: beat 1s infinite;
 }
 
-#profil > img {
-    width: 500px;
-    height: 500px;
+#profil {
+    color: black;
+    font-size: larger;
+    font-weight: initial;
+}
+
+#Upper, #Lower {
+    min-height: 50%;
+    flex-wrap: nowrap;
+}
+
+#Lower {
+    width: 94%;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+#Lower > p {
+    margin: 3% 0 0 0;
+}
+
+#profil > div > img {
+    margin: 2%;
+    max-width: 42%;
+    border: 4px solid #ffbd59;
+}
+
+#profiltekst {
+    padding-right: 10%;
 }
 
 #chatview {
