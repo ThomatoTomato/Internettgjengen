@@ -16,12 +16,12 @@
 
     <div class="tower">
       <h1>NEW PLAYER</h1>
-      <div id="form" class="box large">
+      <form id="form" class="box large">
         <div class="formContainer">
           <div class="formDiv tower flexable">
             <div>
               <label for="NTNU-email">NTNU-email:</label><br>
-              <input type="email" id="email" name="email" placeholder="brukernavn@stud.ntnu.no" required> <!-- Her må jeg fikse at mailen må slutte på @stud.ntnu.no-->
+              <input type="email" id="email" name="email" placeholder="brukernavn@stud.ntnu.no" required pattern=".*@.*ntnu.no"> <!-- Bruker en regex for å sjekke at denne mailen er fra NTNU-->
             </div>
             <div>
               <label for="passord">Passord:</label><br>
@@ -82,8 +82,7 @@
             </div>
           </div>
         </div>
-      </div>
-
+      </form>
     </div>
   </div>
   <footer></footer>
