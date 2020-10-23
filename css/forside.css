@@ -1,5 +1,34 @@
-#side, #intro {
-    justify-content: space-around;
+h1 {
+    font-size: 400%;
+    margin: 0 3%;
+}
+
+#quote {
+    text-align: center;
+    font-size: 200%;
+    font-family: cooper hewitt heavy;
+}
+
+button {
+    width: 40%;
+    height: 30%;
+    border-radius: 40%;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+    color: white;
+    font-family: futuristic armor;
+    font-size: 40%;
+}
+
+button:first-child {
+    border: 5px solid #346dbc;
+    background-color: #7da2d5;   
+}
+
+button:last-child {
+    border: 5px solid #032a5d;
+    background-color: #004aad;
 }
 
 .box {
@@ -8,25 +37,22 @@
     margin: 0 3%;
 }
 
+#side, #intro  {
+    justify-content: space-around;
+}
+
+#title {
+    font-size: 800%;
+}
+
 #innhold {
     margin: 20px 0;
     width: 100vw;
 }
 
-h1 {
-    font-size: 400%;
-    margin: 0 3%;
-}
-
-p {
-    text-align: center;
-    font-size: 200%;
-    font-family: cooper hewitt heavy;
-}
-
 #htp {
   color: #ff66c4;
-  text-shadow: 2px 2px #7da2d5;
+  text-shadow: 4px 2px #7da2d5;
 }
 
 #tv {
@@ -35,30 +61,44 @@ p {
 }
 
 #hjerteboks {
-    justify-content: space-evenly;
+    max-width: 100%;
+    justify-content: space-around;
+    flex-flow: row nowrap;
 }
 
 #hjerteboks > img {
-    --size: 15%;
-    width: var(--size);
-    height: var(--size);
+    margin: 0 4%;
 }
 
-.formContainer {
-    display: inline-flex;
-    flex-direction: row;
-    position: relative;
+.pheart {
+    max-width: calc(100% / 6);
 }
 
-.formDiv {
-    align-self: auto;
-    margin-left: 50px;
-    margin-top: 10px;
+#form {
+    padding: 4%;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    font-size: 150%;
+    width: 92%;
+    height: 92%;
 }
-
 
 input {
-    height: 30px;
+    width: 100%;
+    height: 50%;
+    margin: 4px 0 20px 0;
     background-color: #eff3fa;
     border: none;
+    font-size: 100%;
+}
+
+#buttons {
+    justify-content: space-around;
+    flex: 2 1 auto;
+    font-family: "cooper hewitt heavy";
+    color: white;
+    font-size: 300%;
+    text-shadow: -4px -1px #032a5d;
+    text-align: center;
 }

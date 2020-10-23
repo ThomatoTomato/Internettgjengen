@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Profil</title>
+    <link rel="icon" href="img/elementer/pixelhjerte.png">
+    
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registrering.css"> <!--Profil og reg kan kansje ha felles css?-->
+    
+    <script src="scripts/injects.js" async></script>
   </head>
  
   <body>
-    <a href="forside.html"><img id="profil" class="iconoclast" src="img/elementer/profil.png" alt="profil"></a>   <!--denne skal logge deg ut-->
-    <a href="hovedside.html"><img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte"></a>
+
     <div class="tower">
       <h1>PLAYER INFO</h1>
       <form>
@@ -47,7 +50,7 @@
               <option value="F">F</option>
               <option value="F2">Har ikke tatt Exphil</option>
             </select>   
-            <input type="submit" value="Lagre"> <!--Denne knappen må flyttes til en bedre plass og få riktig design-->
+            <button type="submit" value="LAGRE" id="registerButton" class="iconoclast">Lagre</button> <!--Denne knappen må flyttes til en bedre plass og få riktig design-->
           </div>
 
           <div class=formDiv>
@@ -59,6 +62,6 @@
         </div>
     </form>
           
+    <footer></footer> 
     </div>
-      
 </body>

@@ -1,12 +1,16 @@
 html, body {
+  position: relative;
   margin: 0;
   padding: 0;
 
   /* Dette er noe som er veldig ulikt meg (Thomas), men vi kan faktisk definere globale variabler :scream: Fordelen ved å gjøre det slik i et markeringsspråk er at vi kun trenger å endre på denne ene tingen for å endre mer ting. */
 
   --eksempel: 2em;
-  --minHeight: 500px;
-  --minWidth: 500px;
+  --minHeight: 300px;
+  --minWidth: 300px;
+  --maxHeight: 500px;
+  --maxWidth: 500px;
+
 
   /* Forstår ikke hvordan dette virker eller om det virker */
   min-width: var(--minWidth);
@@ -20,6 +24,17 @@ body {
 
   height: 100vh;
   width: 100vw;
+}
+
+footer {
+  text-align: center;
+}
+
+footer>p>a:link, footer>p>a:visited 
+{
+  margin: 4px;
+  color: white;
+  text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -46,10 +61,26 @@ h1, h2, h3 {
   left: 2px;
 }
 
-#profil {
+#profil, #registerButton {
   top: 2px;
   right: 2px;
 }
+
+#registerButton
+{
+  width: 100px;
+  height: 50px;
+  border-radius: 40%;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+  color: white;
+  font-family: futuristic armor;
+  font-size: 100%;
+  border: 5px solid #d61a22;
+  background-color: #ed1c24 ;   
+}
+
 
 #lan {
   display: block;
@@ -75,8 +106,20 @@ h1, h2, h3 {
   width: 100vw;
 }
 
+.box {
+  border: solid 12px #004aad;
+  background-color: white;
+  min-height: var(--minHeight);
+  min-width: var(--minWidth);
+  max-height: var(--maxHeight);
+  max-width: var(--maxWidth);
+  align-self: auto;
+  margin: 3%; 
+  padding: 0;
+}
+
 .chain {
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -92,17 +135,6 @@ h1, h2, h3 {
 /* Gjør slik at ting krymper likt med andre, men ikke vokser. Vet du hva, jeg vet egentlig ikke hva dette gjør, det bare virkert smart. */
 .flexable {
   flex: 0 1 auto;
-}
-
-.box {
-  border: solid 12px #004aad;
-  background-color: white;
-  display: block;
-  min-height: var(--minHeight);
-  min-width: var(--minWidth);
-  align-self: auto;
-  margin: 3%; 
-  padding: 0;
 }
 
 .large {

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
 
-  <head>
+  <head id="Hovedside">
     <meta charset="utf-8">
     <title>Love @ NTNU</title>
+    <link rel="icon" href="img/elementer/pixelhjerte.png">
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hovedside.css">
+
+    <script src="scripts/hovedside.js" async></script>
+    <script src="scripts/injects.js" async></script>
   </head>
 
   <body>
-    <div class="screen">
+    <div id="wrapper" class="tower screen">
       
       <img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
-
       <a href="profil.html"><img id="profil" class="iconoclast" src="img/elementer/profil.png" alt="Profilikon"></a>
+
 
       <div id="side1" class="tower">
 
@@ -24,14 +28,25 @@
       
       </div>
 
-      <div id="side2" class="chain screen">
-        
+      <div id="side2" class="chain">
         
         <div class="tower flexable">
           
           <h1 class="match">DIN MATCH:</h1>
-          <div id="profil" class="box">
-            <img src="img/profilbilder/E1.jpg" alt="meg!">
+          <div id="profil" class="tower box">
+            <div id="Upper" class="chain flexable">
+              <img id="pbilde" class="flexable" src="img/profilbilder/E1.jpg" alt="meg!">
+              <p id="profiltekst">Monader er egt bare en monoide i kategorien av endofunktorer. Hva er så vanskelig med det?</p>
+            </div>
+            <div id="Lower" class="tower flexable">
+              <div>
+
+              </div>
+              <p><b>Aktiv i:</b> Hackerspace, Realfagsdagene</p>
+              <p><b>Interesser:</b> Monader</p>
+              <p><b>Karakter i Ex.Phil:</b> C</p>
+              <p><b>Født:</b> 01.05.1999</p>
+            </div>
           </div>
         </div>
         
@@ -42,10 +57,15 @@
         <div class="tower flexable">
           <h1 class="match">CHAT:</h1>
 
-          <div class="box"></div>
+          <div class="box tower">
+            <div id="chatview"></div>
+            <div class="chain">
+              <img src="img/elementer/chatboble.png" alt="Send melding" id="chatboble" onclick="displayMessage('user')">
+              <textarea id="chatbar" rows="1" wrap="soft" "></textarea>
+            </div>
+          </div>
         </div>
       </div>
+      <footer></footer>
     </div>
-
-    <script src="scripts/hovedside.js"></script>
   </body>

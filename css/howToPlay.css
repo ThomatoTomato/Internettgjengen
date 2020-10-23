@@ -1,0 +1,16 @@
+::content.h1 {
+    color: #ff66c4;
+}
+
+.li {
+    font-family: "cooper hewitt heavy";
+    color: white;
+    font-size: 200%;
+}
+
+ol {
+    font-family: "cooper hewitt heavy";
+    color: #ffeda3;
+    font-size: 200%;
+}
+
