@@ -16,7 +16,7 @@
 
   <body>
     <div id="wrapper" class="tower screen">
-      
+
       <img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
       <a href="profil.html"><img id="profil" class="iconoclast" src="img/elementer/profil.png" alt="Profilikon"></a>
 
@@ -25,35 +25,39 @@
 
         <h1 class="flexable">DU HAR EN NY MATCH</h1>
         <img id="bheart" class="flexable" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
-      
+
       </div>
 
       <div id="side2" class="chain">
-        
+
+        <div id="leftArrow" class="flexable">
+          LEFT
+        </div>
+
         <div class="tower flexable">
-          
+
           <h1 class="match">DIN MATCH:</h1>
           <div id="profil" class="tower box">
             <div id="Upper" class="chain flexable">
               <img id="pbilde" class="flexable" src="img/profilbilder/E1.jpg" alt="meg!">
-              <p id="profiltekst">Monader er egt bare en monoide i kategorien av endofunktorer. Hva er så vanskelig med det?</p>
+              <p id="profiltekst"></p>
             </div>
             <div id="Lower" class="tower flexable">
               <div>
 
               </div>
-              <p><b>Aktiv i:</b> Hackerspace, Realfagsdagene</p>
-              <p><b>Interesser:</b> Monader</p>
-              <p><b>Karakter i Ex.Phil:</b> C</p>
-              <p><b>Født:</b> 01.05.1999</p>
+              <p id="activeInMatch"></p>
+              <p id="interestsMatch"></p>
+              <p id="exphGrad"></p>
+              <p id="born"></p>
             </div>
           </div>
         </div>
-        
+
         <div id="smallHack">
           <img id="lan" src="img/elementer/logo.png" alt="LAN">
         </div>
-        
+
         <div class="tower flexable">
           <h1 class="match">CHAT:</h1>
 
@@ -61,9 +65,13 @@
             <div id="chatview"></div>
             <div class="chain">
               <img src="img/elementer/chatboble.png" alt="Send melding" id="chatboble" onclick="displayMessage('user')">
-              <textarea id="chatbar" rows="1" wrap="soft" "></textarea>
+              <textarea id="chatbar" rows="1" wrap="soft"> </textarea>
             </div>
           </div>
+        </div>
+
+        <div id="rightArrow" class="flexable">
+          RIGHT
         </div>
       </div>
       <footer></footer>
