@@ -13,7 +13,8 @@ function generateMatch(bildeUrl, bio, activeIn, interests, exphGrad, born) {
     activeIn: activeIn,
     interests: interests,
     exphGrad: exphGrad,
-    born: born
+    born: born,
+    chatView: ""
   };
   return matchObj;
 }
@@ -25,9 +26,11 @@ matches.push(generateMatch("img/Indok-styret/maren.jpg","Hei, jeg er vennen til 
 matches.push(generateMatch("img/Indok-styret/sarah.jpg", "Skapkommunist, ja visst. Vil du bli min comrade?", "Rød ungdom", "Maos lille røde", "B", "19.10.98"));
 
 let matchIndexer = 0;
+let matchesThatSatisfyReqs =  [];
 
+// Denne funksjonen finner alle matcher med samme exphil karakter, og legger på listeners på
+// click på LEFT og RIGHT events.
 function intializeMatches(gradeReq) {
-  let matchesThatSatisfyReqs =  [];
   for (var i=0; i<matches.length; i++) {
     if (matches[i].exphGrad == gradeReq) {
       matchesThatSatisfyReqs.push(matches[i]);
@@ -41,6 +44,7 @@ function intializeMatches(gradeReq) {
   document.getElementById("interestsMatch").innerHTML = "<b>Interesser:</b> " + yourMatch.interests;
   document.getElementById("exphGrad").innerHTML = "<b>Karakter i Ex.Phil:</b> " + yourMatch.exphGrad;
   document.getElementById("born").innerHTML = "<b>Født:</b> " + yourMatch.born;
+  document.getElementById("chatview").innerHTML = yourMatch.chatView;
 
   document.getElementById("leftArrow").addEventListener("click", function() {
     matchIndexer = matchIndexer - 1;
@@ -56,6 +60,7 @@ function intializeMatches(gradeReq) {
     document.getElementById("interestsMatch").innerHTML = "<b>Interesser:</b> " + yourMatch.interests;
     document.getElementById("exphGrad").innerHTML = "<b>Karakter i Ex.Phil:</b> " + yourMatch.exphGrad;
     document.getElementById("born").innerHTML = "<b>Født:</b> " + yourMatch.born;
+    document.getElementById("chatview").innerHTML = yourMatch.chatView;
   });
 
   document.getElementById("rightArrow").addEventListener("click", function() {
@@ -72,7 +77,10 @@ function intializeMatches(gradeReq) {
     document.getElementById("interestsMatch").innerHTML = "<b>Interesser:</b> " + yourMatch.interests;
     document.getElementById("exphGrad").innerHTML = "<b>Karakter i Ex.Phil:</b> " + yourMatch.exphGrad;
     document.getElementById("born").innerHTML = "<b>Født:</b> " + yourMatch.born;
+    document.getElementById("chatview").innerHTML = yourMatch.chatView;
   });
+
+  return
 }
 
 function back() {
@@ -140,5 +148,7 @@ document.getElementById("chatbar").addEventListener("keydown", function(key) {
   if(key.keyCode == 13){
       key.preventDefault();
       displayMessage('user');
+      // Her lagrer vi chatten til brukeren det chattes til
+      matchesThatSatisfyReqs[matchIndexer].chatView = document.getElementById("chatview").innerHTML;
   }
 });
