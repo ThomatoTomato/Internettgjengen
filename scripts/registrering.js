@@ -58,6 +58,7 @@ submit.addEventListener("submit", function(event) {
   let volunteering = document.getElementById("verv").value;
   let interests = document.getElementById("Interesser").value;
   let grade = document.getElementById("Karakter").value;
+  let bio = document.getElementById("bio").value;
 
   // Vi lagrer et objekt i localStorage for brukeren som blir registrert.
   let localStorage = window.localStorage;
@@ -76,6 +77,7 @@ submit.addEventListener("submit", function(event) {
     id: parseInt(localStorage.getItem("idIterator")),
     email: email,
     password: password,
+    bio: bio,
     born: born,
     name: name,
     volunteering: volunteering,
