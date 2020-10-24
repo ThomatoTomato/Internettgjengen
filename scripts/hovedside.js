@@ -88,7 +88,6 @@ function chat() {
     intializeMatches(activeUser.grade);
 }
 
-
 function displayMessage(caller)
 {
 
