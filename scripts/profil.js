@@ -1,19 +1,15 @@
-{ //Lager et scope som copy-paster informasjon fra forsiden man skriver inn i forsiden, hvis det finnes
-  //Denne informasjonen er lagret i sessionstorage og skal fjernes etter den er limt inn i formet.
-  let sS = sessionStorage
-  let email = sS.getItem("emailReg")
-  let password = sS.getItem("passwordReg")
+let sessionStorage = window.sessionStorage;
+let activeUser = JSON.parse(sessionStorage.getItem("activeUser"));
 
-  if (email != "") {
-    document.getElementById("email").value = email
-  }
-  if (password != "") {
-    document.getElementById("passord").value = password
-  }
-
-  sS.setItem("emailReg", "")
-  sS.setItem("passwordReg", "")
-}
+// Setter inn alle verdiene fra activeUser
+document.getElementById("email").value = activeUser.email;
+document.getElementById("passord").value = activeUser.password;
+document.getElementById("gpassord").value = activeUser.password;
+document.getElementById("Født").value = activeUser.born;
+document.getElementById("navn").value = activeUser.name;
+document.getElementById("verv").value = activeUser.volunteering;
+document.getElementById("Interesser").value = activeUser.interests;
+document.getElementById("Karakter").value = activeUser.grade;
 
 // Vi vil at bildeopplasting skal trigges når man trykker på bildet.
 var pbBox = document.getElementById("pbBox");
@@ -22,9 +18,19 @@ pbBox.addEventListener("click", function() {
   imgInput.click()
 });
 
-// Lagrer bilde i base64 og endrer background-image på boksen.
-// Hvis jeg prøver å endre en let inni functionen funker det ikke, så gjorde det med var.
-var imgInBase64;
+// Endrer bilde
+var imgObj = new Image();
+imgObj.src = activeUser.profileImg;
+pbBox.innerHTML = "";
+pbBox.style["background-image"] = "url('" + imgObj.src + "')";
+pbBox.style["background-size"] = "cover";
+
+
+// Vi vil jo selvfølgelig endre profilting.
+// Her gjør vi det.
+
+// Hele bildegreia på nytt.
+var imgInBase64 = activeUser.profileImg;
 let imgUploader = document.getElementById("img");
 imgUploader.addEventListener("change", function() {
   let fileReader = new FileReader();
@@ -44,7 +50,7 @@ imgUploader.addEventListener("change", function() {
 
 let submit = document.getElementById("form");
 
-//Denne koden kjører dersom form validation er suksessfull
+// La oss lytte etter at noen vil endre profilen sin.
 submit.addEventListener("submit", function(event) {
   // Gjør det slik at formen ikke submitter
   event.preventDefault()
@@ -59,21 +65,11 @@ submit.addEventListener("submit", function(event) {
   let interests = document.getElementById("Interesser").value;
   let grade = document.getElementById("Karakter").value;
 
-  // Vi lagrer et objekt i localStorage for brukeren som blir registrert.
+  // Vi endrer localStorage objektet.
   let localStorage = window.localStorage;
 
-  // Hvis det aldri har blitt lagret en bruker på enheten før, initialiseres
-  // et unikt identifikatorobjekt i localStorage.
-  if (localStorage.getItem("idIterator") === null) {
-    localStorage.setItem("idIterator", 1);
-  }
-  // Hvis et slikt objekt allerede finnes, legger vi til 1 for å få en ny unik id.
-  else {
-    localStorage.setItem("idIterator", parseInt(localStorage.getItem("idIterator"))+1);
-  }
-
   let objectToBeStored = {
-    id: parseInt(localStorage.getItem("idIterator")),
+    id: parseInt(activeUser.id),
     email: email,
     password: password,
     born: born,
@@ -85,13 +81,16 @@ submit.addEventListener("submit", function(event) {
   };
 
   // Så lagrer vi alt i session og local
-  localStorage.setItem("person" + localStorage.getItem("idIterator"), JSON.stringify(objectToBeStored));
+  localStorage.setItem("person" + activeUser.id, JSON.stringify(objectToBeStored));
 
   let sessionStorage = window.sessionStorage;
   sessionStorage.setItem("activeUser", JSON.stringify(objectToBeStored));
-  window.location.href = "hovedside.html";
+  window.location.href = "profil.html";
 });
 
+
+// Jeg copy-pasta hele greia di inn her Thomas
+// Vi bør vel strengt tatt ha en felles fil
 
 {
 // Jeg ønsker å bake inn form validation inn i formen

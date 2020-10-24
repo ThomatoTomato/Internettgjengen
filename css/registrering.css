@@ -34,7 +34,7 @@ h1 {
     text-align: center;
     color: #eff3fa;
     font-family: Cooper Hewitt Heavy;
-    
+
 }
 
 #img{
@@ -47,4 +47,34 @@ div > #registerButton{
     /* height: 20%; */
     right: calc(50% - 50px );
     top: calc(100% - 25px);
+}
+
+.pheart {
+  max-width: calc(100%/3);
+  padding-top: 1vh;
+}
+
+#imgBox {
+  margin: 5%;
+}
+
+#img {
+  display: none;
+}
+
+#vertHeartBox {
+  max-width: calc(100%/4);
+}
+
+#pbBox {
+  width: calc(100%/3);
+  height: 15vh;
+  border: solid 4px #ffbd59;
+  color: black;
+  text-align: center;
+  padding: 5%;
+}
+
+#pbBox img {
+  width: 50%;
 }
