@@ -9,3 +9,8 @@ html, body {
     text-align: center;
     font-family: "horizon";
   }
+
+  #content {
+    max-width: 800px;
+    margin: auto;
+  }

@@ -33,7 +33,7 @@ h1 {
     font-size: 400%;
     text-align: center;
     color: #eff3fa;
-    font-family: Cooper Hewitt Heavy;
+    font-family: 'cooper hewitt heavy';
 
 }
 
@@ -77,4 +77,8 @@ div > #registerButton{
 
 #pbBox img {
   width: 50%;
+}
+
+footer {
+  margin-top: 40px;
 }

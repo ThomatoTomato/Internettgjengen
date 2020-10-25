@@ -17,6 +17,7 @@ html, body {
   min-height: var(--minHeight);
 }
 
+/* Gjennomgående sidestyling */
 body {
   background-color: #2867bb;
   font-family: 'open sans light';
@@ -28,21 +29,27 @@ body {
 
 footer {
   text-align: center;
-}
-
-footer>p>a:link, footer>p>a:visited 
-{
   margin: 4px;
-  color: white;
-  text-decoration: none;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* Standard headerstyling*/
 h1, h2, h3 {
-  font-family: "cooper hewitt heavy";
+  font-family: 'cooper hewitt heavy';
   color: white;
   font-size: 300%;
-  text-shadow: -4px -1px #032a5d;
+  text-shadow: -6px -1px #032a5d;
   text-align: center;
+}
+
+/* fancy headerstyling */
+.rosah1 {
+  color: #ff66c4;
+  text-shadow: -4px -1px #8feeff, 4px -1px #ff2c2c ;
 }
 
 .iconoclast {
@@ -56,9 +63,12 @@ h1, h2, h3 {
   position: absolute;
 }
 
+/* INJECTS */
 #hjerte {
   top: 2px;
   left: 2px;
+  width: 54px;
+  height: 50px;
 }
 
 #profil, #registerButton {
@@ -68,20 +78,22 @@ h1, h2, h3 {
 
 #registerButton
 {
-  width: 100px;
-  height: 50px;
+  width: 140px;
+  height: 70px;
   border-radius: 40%;
   -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
   box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
   color: white;
-  font-family: futuristic armor;
-  font-size: 100%;
+  font-family: 'futuristic armour';
+  font-weight: bold;
+  font-size: 150%;
   border: 5px solid #d61a22;
   background-color: #ed1c24 ;   
+  margin: 20px;
 }
 
-
+/* LOGO */
 #lan {
   display: block;
   margin: 0 auto;
@@ -96,6 +108,7 @@ h1, h2, h3 {
   height: var(--size);
 }
 
+/*???*/
 #hjerte:hover, #bheart:hover {
   cursor: pointer;
 }

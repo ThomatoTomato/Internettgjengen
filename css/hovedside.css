@@ -16,11 +16,6 @@ h1 {
     margin: 0;
 }
 
-.match {
-    color: #ff66c4;
-    text-shadow: -4px -1px #7da2d5 ;
-}
-
 #side2 > .tower {
     margin: 3%;
     align-items: flex-start;
