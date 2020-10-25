@@ -3,8 +3,9 @@ p {
     margin: 0 8px;
 }
 
-img {
+p ~ img, div ~ img {
     margin: 0 8px;
+    border: 4px solid #ffbd59;
 }
 
 .chain {
@@ -19,4 +20,15 @@ img {
 #innhold {
     width: inherit;
     flex-flow: row wrap;
+}
+
+#Skjønt {
+    position: absolute;
+    top: 0;
+    left: -160px;
+    transform: rotate(-0.2617993878rad); /* Tallet er sånn ca. pi/6 */
+}
+
+#innhold > div {
+    position: relative;
 }

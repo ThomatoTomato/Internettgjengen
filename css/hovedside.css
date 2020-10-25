@@ -34,11 +34,18 @@ h1 {
     color: black;
     font-size: larger;
     font-weight: initial;
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+#Upper > img {
+    min-height: 230px;
 }
 
 #Upper, #Lower {
     min-height: 50%;
     flex-wrap: nowrap;
+    flex-grow: 1;
 }
 
 #Lower {

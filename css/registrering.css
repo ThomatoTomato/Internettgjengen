@@ -55,7 +55,8 @@ div > #registerButton{
 
 #pbBox {
   width: calc(100%/3);
-  height: 15vh;
+  height: 15%;
+  min-height: ;
   border: solid 4px #ffbd59;
   color: black;
   text-align: center;
