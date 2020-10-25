@@ -133,6 +133,10 @@ textarea {
   cursor: pointer;
 }
 
+#leftArrow {
+    transform: scaleX(-1);
+}
+
 @keyframes beat {
   0%    { transform: scale(1);      }
   25%   { transform: scale(1.3);    }

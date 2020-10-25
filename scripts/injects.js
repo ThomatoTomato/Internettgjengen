@@ -62,7 +62,7 @@ function displayLogout() {
     let text = document.createTextNode("Logg ut");
     register.appendChild(text);
     register.setAttribute("id", "registerButton");
-    register.setAttribute("class", "iconoclast");
+    register.setAttribute("class", "iconoclast redButton");
     register.setAttribute("onclick", "logout()");
 
     document.body.insertBefore(register, document.body.firstChild);
