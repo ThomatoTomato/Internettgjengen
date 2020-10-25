@@ -4,18 +4,17 @@ h1 {
 
 ol {
     font-family: 'cooper hewitt heavy';
-    color: white;
     font-size: 200%;
+    line-height: 200%;
     list-style-position: inside;
     text-align: center;
-    line-height: 200%;
-
+    margin-top: 0;
+    /* for å få tallet stylet separat */
     counter-reset: counter;
     list-style: none;
-
-    margin-top: 0;
 }
 
+/* for å få tallet stylet separat */
 ol li {
     counter-increment: counter;
 }
@@ -25,9 +24,10 @@ ol li::before {
     color: #ffd943;
     font-weight: bold;
 }
+/* -- */
 
 a:link, a:visited {
-    color: white;
+    text-decoration: underline;
 }
 
 .flex {
@@ -39,4 +39,23 @@ a:link, a:visited {
     max-height: 89px;
     max-width: 100px;
     margin-left: 10px;
+}
+
+#tipstriks {
+    top: 10%;
+    left: -10%;
+}
+
+#dhsd {
+    bottom: 8%;
+    left: 0%;
+}
+
+#pil {
+    bottom: 3%;
+    left: 15%;
+}
+
+#content {
+    position: relative;
 }

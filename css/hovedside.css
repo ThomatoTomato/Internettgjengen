@@ -30,7 +30,7 @@ h1 {
     animation: beat 1s infinite;
 }
 
-#profil {
+#match {
     color: black;
     font-size: larger;
     font-weight: initial;
@@ -50,14 +50,22 @@ h1 {
     margin: 3% 0 0 0;
 }
 
-#profil > div > img {
+#match > div > img {
     margin: 2%;
     max-width: 42%;
     border: 4px solid #ffbd59;
 }
 
-#profiltekst {
+#profiltekst{
     padding-right: 10%;
+}
+
+#navnAlder {
+    font-size: 120%;
+}
+
+#linje {
+    font-size: 90%;
 }
 
 #chatview {
