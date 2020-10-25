@@ -30,11 +30,53 @@ body {
 footer {
   text-align: center;
   margin: 4px;
+  text-decoration: underline;
 }
 
 a:link, a:visited {
   text-decoration: none;
   color: white;
+}
+
+.pynt {
+  position: absolute;
+}
+
+button {
+  width: 40%;
+  height: 30%;
+  border-radius: 40%;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
+  color: white;
+  font-family: 'futuristic armour';
+  font-size: 140%;
+  font-weight: bold;
+}
+
+
+
+/* forms */
+
+input, textarea {
+  background-color: #eff3fa;
+  border: none;
+  font-family: inherit;
+}
+
+input {
+  height: 30px;
+  width: 120%;
+}
+
+::placeholder {
+  padding-left: 5px;
+  color: darkgrey;
+}
+
+textarea {
+  resize: none;
 }
 
 /* Standard headerstyling*/
@@ -50,6 +92,12 @@ h1, h2, h3 {
 .rosah1 {
   color: #ff66c4;
   text-shadow: -4px -1px #8feeff, 4px -1px #ff2c2c ;
+}
+
+.gulh1 {
+  color: #ffeda3;
+  text-shadow: -4px -1px #ffd631;
+  -webkit-stroke-color: #ffde59; /* ???? */
 }
 
 .iconoclast {
@@ -80,14 +128,6 @@ h1, h2, h3 {
 {
   width: 140px;
   height: 70px;
-  border-radius: 40%;
-  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
-  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
-  color: white;
-  font-family: 'futuristic armour';
-  font-weight: bold;
-  font-size: 150%;
   border: 5px solid #d61a22;
   background-color: #ed1c24 ;   
   margin: 20px;
