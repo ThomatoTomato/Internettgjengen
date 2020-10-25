@@ -84,20 +84,24 @@ h1, h2, h3 {
   font-family: 'cooper hewitt heavy';
   color: white;
   font-size: 300%;
-  text-shadow: -6px -1px #032a5d;
+  text-shadow: 5px -2px #4b7ec5;
   text-align: center;
 }
 
 /* fancy headerstyling */
 .rosah1 {
   color: #ff66c4;
-  text-shadow: -4px -1px #8feeff, 4px -1px #ff2c2c ;
+  text-shadow: -4px 0px #8feeff, 4px 0px #ff2c2c ;
 }
 
 .gulh1 {
   color: #ffeda3;
-  text-shadow: -4px -1px #ffd631;
+  text-shadow: -3px 0px #ffd631, 3px 0px #ffd631, 0px 3px #ffd631, 0px -3px #ffd631;
   -webkit-stroke-color: #ffde59; /* ???? */
+}
+
+.rosah1, .gulh1 {
+  font-style: italic;
 }
 
 .iconoclast {
