@@ -77,14 +77,24 @@ function displayRegister()
     let text = document.createTextNode("Register");
     register.appendChild(text);
     register.setAttribute("id", "registerButton");
-    register.setAttribute("class", "iconoclast");
-    register.setAttribute("onclick", "redirect()");
+    register.setAttribute("class", "iconoclast redButton");
+    register.setAttribute("onclick", "redirectRegister()");
+
+    // injecter login-button
+    let login = document.createElement("BUTTON");
+    let text2 = document.createTextNode("Fortsett spill");
+    login.appendChild(text2);
+    login.setAttribute("id", "loginButton");
+    login.setAttribute("class", "iconoclast redButton");
+    login.setAttribute("onclick", "redirectForside()");
 
     document.body.insertBefore(register, document.body.firstChild);
+    document.body.insertBefore(login, document.body.firstChild);
 }
 
-// denne er teit men den er her fordi det ikke funka med lambda når jeg skulle sette attribute..
-function redirect() { window.location.href = 'registrering.html'; }
+// disse er teite men de er her fordi det ikke funka med lambda når jeg skulle sette attribute..
+function redirectRegister() { window.location.href = 'registrering.html'; }
+function redirectForside() { window.location.href = 'forside.html'; }
 
 function logout() {
     if (window.confirm("Er du sikker på at du vil logge ut?")) {

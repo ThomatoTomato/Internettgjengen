@@ -54,19 +54,10 @@ button:last-child {
     letter-spacing: 5px;
 }
 
-#hjerteboks {
-    max-width: 85%;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-}
-
-#hjerteboks > img {
-    margin: 0 4%;
-}
-
 .pheart {
     max-width: calc(100% / 6);
-}
+  }
+  
 
 #form {
     padding: 4%;

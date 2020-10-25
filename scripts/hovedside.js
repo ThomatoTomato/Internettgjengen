@@ -22,10 +22,11 @@ function generateMatch(bildeUrl, bio, navn, alder, activeIn, interests, exphGrad
   return matchObj;
 }
 
-matches.push(generateMatch("img/profilbilder/E1.jpg", "Monader er egt bare en monoide i kategorien av endofunktorer. Hva er så vanskelig med det?", "Thomas Thorbjørnsen", "21","Hackerspace, Realfagsdagene","Monader", "C", "01.05.1999", ['hei', 'du er kul', 'vil du booke et grupperom sammen?']));
+// matcher
+matches.push(generateMatch("img/profilbilder/E1.jpg", "Monader er egt bare en monoide i kategorien av endofunktorer. Hva er så vanskelig med det?", "Thomas", "21","Hackerspace, Realfagsdagene","Monader", "C", "01.05.1999", ['hei', 'du er kul', 'vil du booke et grupperom sammen?']));
 matches.push(generateMatch("https://3.bp.blogspot.com/-99GXeCJkLuE/UXL8mClxm0I/AAAAAAAACUw/JTenHOuNbx0/w1200-h630-p-k-no-nu/bilde.jpg", "Hei, jeg heter Magnus. Hva faen heter du?", "Magnus", "21", "Orbit NTNU", "BURN: Bruk koden Magnus15 for 15% avslag på Burn.", "B", "13.01.1999", ['hei', '*flammeemoji*', 'burn baby burn']));
 matches.push(generateMatch("https://www.fosna-folket.no/incoming/article9783978.ece/ALTERNATES/w380-default/DSC_2420.JPG", "Hei hei hei, jeg heter Martin, hei hei hei hva heter du?", "Martin", "21", "Kaffedrikker", "løping", "D", "23.03.99", ['yo', 'fikk du også D i exphil? hvis ikke kan du få min ;))', 'gotta go fast']));
-matches.push(generateMatch("img/Indok-styret/maren.jpg","Hei, jeg er vennen til Thomas, men jeg er på utkikk etter flere venner. Vil du være vennen min?", "Maren Sandhaug", "21", "Thomas", "Være med Thomas", "A", "08.10.99", ['hællæ', 'hjertet mitt slår i 4:5 polyrytme når jeg ser deg', 'sorry jeg kan egt ikke prate nå, gjør algdat']));
+matches.push(generateMatch("img/Indok-styret/maren.jpg","Hei, jeg er vennen til Thomas, men jeg er på utkikk etter flere venner. Vil du være vennen min?", "Maren", "21", "Thomas", "Være med Thomas", "A", "08.10.99", ['hællæ', 'hjertet mitt slår i 4:5 polyrytme når jeg ser deg', 'sorry jeg kan egt ikke prate nå, gjør algdat']));
 matches.push(generateMatch("img/Indok-styret/sarah.jpg", "Skapkommunist, ja visst. Vil du bli min comrade?", "Sarah", "22", "Rød ungdom", "Maos lille røde", "B", "19.10.98", ['hei', 'er du kommunist?', 'favorittfargen min er rød']));
 
 console.log(matches.length);
@@ -114,6 +115,7 @@ function displayMessage(caller)
   }
   else if (caller === "bot")
   {
+    if (activeMatch === null) { console.log("no match found"); return; }
     message = activeMatch.answers[Math.round(Math.random()*(activeMatch.answers.length-1))];
     name = document.createTextNode(activeMatch.navn+": ");
     nameNode.setAttribute("class", "botChatID");

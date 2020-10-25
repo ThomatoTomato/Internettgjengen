@@ -71,10 +71,6 @@ h1 {
     font-size: 120%;
 }
 
-#linje {
-    font-size: 90%;
-}
-
 #chatview {
     width: 100%;
     max-width: calc(var(--maxWidth) -  20px);
@@ -126,7 +122,6 @@ h1 {
 }
 
 textarea {
-    resize: none;
     font-size: larger;
 }
 
