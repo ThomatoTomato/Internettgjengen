@@ -4,50 +4,65 @@ html, body {
   padding: 0;
 } 
 
+/* Definerer størrelser på elementer basert på skjermstørrelsen. Av en eller annen grunn blir ting veldig pent når man deler på 7. */
 @media only screen and (max-width: 1920px) {
-  body {
-    --widthNormal: 822px;
+  .box {
+    --widthNormal: 549px;
   }
   
   .large {
     --widthLarge: 1372px;
   }
+
+  #lan {
+    --size: 200px;
+  }
 }
 
-/* Definerer størrelser på elementer basert på skjermstørrelsen */
 @media only screen and (max-width: 1680px) {
-  body {
-    --widthNormal: 720px; 
+  .box {
+    --widthNormal: 504px; 
   }
   
   .large {
     --widthLarge: 1200px;
   }
+
+  /* #lan {
+    --size: 180px;
+  } */
 }
 
 @media only screen and (max-width: 1440px) {
-  body {
-    --widthNormal: 618px;
+  .box {
+    --widthNormal: 486px;
   }
   
   .large {
     --widthLarge: 1029px;
   }
+  /* #lan {
+    --size: 150px;
+  } */
 }
 
 @media only screen and (max-width: 1280px) {
-  body {
-    --widthNormal: 549px;
+  .box {
+    --widthNormal: 453px;
   }
   
   .large {
     --widthLarge: 915px;
   }
+
+  /* #lan {
+    --size: 120px;
+  } */
 }
 
 @media only screen and (max-width: 1024px) {
-  body {
-    --widthNormal: 439px;
+  .box {
+    --widthNormal: 438px;
   }
   
   .large {
@@ -56,8 +71,8 @@ html, body {
 }
 
 @media only screen and (max-width: 720px) {
-  body {
-    --widthNormal: 309px;
+  .box {
+    --widthNormal: 412px;
   }  
   
   .large {
@@ -96,7 +111,6 @@ button {
   height: 30%;
   border-radius: 40%;
   -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
   box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.45);
   color: white;
   font-family: 'futuristic armour';
@@ -164,6 +178,7 @@ h1, h2, h3 {
   height: var(--iconoclast);
 
   position: absolute;
+  z-index: 1;
 }
 
 /* INJECTS */
@@ -201,12 +216,11 @@ h1, h2, h3 {
   right: 100px;
   z-index: 100;
 
-  --size: 200px;
   width: var(--size);
   height: var(--size);
 }
 
-/*???*/
+/* flere mus */
 #hjerte:hover, #bheart:hover {
   cursor: pointer;
 }
@@ -220,10 +234,8 @@ h1, h2, h3 {
 .box {
   border: solid 12px #004aad;
   background-color: white;
-  min-height: var(--minHeight);
-  min-width: var(--minWidth);
-  max-height: var(--maxHeight);
-  max-width: var(--maxWidth);
+  width: var(--widthNormal);
+  height: 500px;
   align-self: auto;
   margin: 3%; 
   padding: 0;

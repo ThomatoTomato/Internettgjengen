@@ -8,6 +8,10 @@ p ~ img, div ~ img {
     border: 4px solid #ffbd59;
 }
 
+div > img {
+    max-width: calc(var(--widthNormal) / 2);
+}
+
 .chain {
     flex-flow: row nowrap
 }

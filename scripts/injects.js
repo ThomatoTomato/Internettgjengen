@@ -17,6 +17,9 @@ else if (document.title == "Profil") {
     displayLogout()
 
 }
+else if (document.head.id == "Hovedside") {
+    displayProfil();
+}
 else { 
     displayHeart();
     displayProfil();

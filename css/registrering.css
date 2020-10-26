@@ -14,6 +14,7 @@
     margin-top: 10px;
     min-width: calc(var(--widthNormal) / 3);
     align-items: stretch;
+    justify-content: flex-start;
 }
 
 .formDiv > div {
@@ -35,7 +36,7 @@
 
 .flexrevolution {
   margin-top: 3%;
-  margin-bottom: 9%;
+  margin-bottom: 2%;
 }
 
 
@@ -73,7 +74,7 @@ div > #registerButton{
 }
 
 #imgBox {
-  margin: 5%;
+  width: calc(var(--widthLarge) / 3.2);
 }
 
 #img {
@@ -86,7 +87,7 @@ div > #registerButton{
 
 #pbBox {
   width: calc(100%/3);
-  /* height: 15%; */
+  height: 150px;
   border: solid 4px #ffbd59;
   color: black;
   text-align: center;
