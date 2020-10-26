@@ -22,8 +22,7 @@ p ~ img, div ~ img {
     flex-flow: row wrap;
 }
 
-#Skjønt {
-    position: absolute;
+#dhsd {
     top: 0;
     left: -160px;
     transform: rotate(-0.2617993878rad); /* Tallet er sånn ca. pi/6 */

@@ -52,22 +52,12 @@ button:last-child {
 #tv, #htp {
     line-height: 80%;
     letter-spacing: 5px;
-    font-style: italic;
-}
-
-#hjerteboks {
-    max-width: 85%;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-}
-
-#hjerteboks > img {
-    margin: 0 4%;
 }
 
 .pheart {
     max-width: calc(100% / 6);
-}
+  }
+  
 
 #form {
     padding: 4%;

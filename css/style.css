@@ -84,20 +84,24 @@ h1, h2, h3 {
   font-family: 'cooper hewitt heavy';
   color: white;
   font-size: 300%;
-  text-shadow: -6px -1px #032a5d;
+  text-shadow: 5px -2px #4b7ec5;
   text-align: center;
 }
 
 /* fancy headerstyling */
 .rosah1 {
   color: #ff66c4;
-  text-shadow: -4px -1px #8feeff, 4px -1px #ff2c2c ;
+  text-shadow: -4px 0px #8feeff, 4px 0px #ff2c2c ;
 }
 
 .gulh1 {
   color: #ffeda3;
-  text-shadow: -4px -1px #ffd631;
+  text-shadow: -3px 0px #ffd631, 3px 0px #ffd631, 0px 3px #ffd631, 0px -3px #ffd631;
   -webkit-stroke-color: #ffde59; /* ???? */
+}
+
+.rosah1, .gulh1 {
+  font-style: italic;
 }
 
 .iconoclast {
@@ -124,8 +128,11 @@ h1, h2, h3 {
   right: 2px;
 }
 
-#registerButton
-{
+#loginButton {
+  left: 2px;
+}
+
+.redButton {
   width: 140px;
   height: 70px;
   border: 5px solid #d61a22;
@@ -220,7 +227,6 @@ label {
 
 #content h1 {
   font-size: 100px;
-  text-align: center;
   margin-bottom: 3vh;
 }
 
@@ -232,7 +238,7 @@ label {
   margin-top: 0;
 }
 
-#secondHeading, #secondHeadingText {
+.rightAligned {
   text-align: right;
 }
 
@@ -244,4 +250,15 @@ label {
 
   color: inherit;
   font-weight: bold;
+}
+
+/* PYNTEHJERTER */
+#hjerteboks {
+  max-width: 85%;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+#hjerteboks > img {
+  margin: 0 4%;
 }

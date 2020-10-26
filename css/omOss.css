@@ -1,12 +1,9 @@
 html, body {
-  margin: 0;
-  padding: 0;
   color: white;
 }
 
 #styret {
   font-size: 50px;
-  text-align: center;
 }
 
 #styretCards {
@@ -23,26 +20,23 @@ html, body {
   display: inline-block;
   margin: 10px;
   position: relative;
+  background-size: cover;
 }
 
 .card:nth-child(1) {
   background-image: url(../img/Indok-styret/markus.jpg);
-  background-size: cover;
 }
 
 .card:nth-child(2) {
   background-image: url(../img/Indok-styret/sarah.jpg);
-  background-size: cover;
 }
 
 .card:nth-child(3) {
   background-image: url(../img/Indok-styret/andrine.jpg);
-  background-size: cover;
 }
 
 .card:nth-child(4) {
   background-image: url(../img/Indok-styret/maren.jpg);
-  background-size: cover;
 }
 
 .cardcontent {
@@ -52,7 +46,7 @@ html, body {
 .cardContainer {
   position: absolute;
   bottom: 0;
-  background-color: lightgrey;
+  background-color: inherit;
   opacity: 0.9;
   width: 100%;
   height: 5vh;
