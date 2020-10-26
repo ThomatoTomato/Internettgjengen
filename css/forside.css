@@ -31,7 +31,7 @@ button:last-child {
     margin: 0 3%;
 }
 
-#side, #intro  {
+#wrapper, #intro  {
     justify-content: space-around;
 }
 
@@ -60,6 +60,7 @@ button:last-child {
   
 
 #form {
+    position: relative;
     padding: 4%;
     justify-content: flex-start;
     align-items: stretch;
@@ -93,11 +94,12 @@ input {
 }
 
 #startHer {
-    top: 38%;
-    left: 3%;
+    position: absolute;
+    top: 172px;
+    left: -323px;
 }
 
 #pil {
-    top: 51%;
-    left: 13%;
+    top: 296px;
+    left: -140px;
 }

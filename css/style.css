@@ -68,6 +68,10 @@ html, body {
   .large {
     --widthLarge: 732px:
   }
+
+  #wrapper {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 720px) {

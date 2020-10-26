@@ -16,7 +16,7 @@ div > img {
     flex-flow: row nowrap
 }
 
-#side {
+#content {
     justify-content: flex-start;
     align-items: stretch;
 }
