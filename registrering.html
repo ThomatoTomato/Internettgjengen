@@ -17,44 +17,44 @@
 
     <div class="tower">
       <h1>NEW PLAYER</h1>
-      <form id="form" class="box large">
+      <form id="form" class="box large flexalphamale">
         <div class="formContainer">
           <div class="formDiv tower flexable">
-            <div>
+            <div class="tower flexrevolution">
               <label for="NTNU-email">NTNU-email:</label><br>
               <input type="email" id="email" name="email" placeholder="brukernavn@stud.ntnu.no" required pattern=".*@.*ntnu.no"> <!-- Bruker en regex for å sjekke at denne mailen er fra NTNU-->
             </div>
-            <div>
+            <div class="tower flexrevolution">
               <label for="passord">Passord:</label><br>
               <input type="password" id="passord" name="passord" placeholder="***********" required>
             </div>
-            <div>
+            <div class="tower flexrevolution">
               <label for="gpassord">Gjenta passord:</label><br> <!-- Her er det foreløpig ingenting som krever at passorden skal være like. Fikses med JS senere-->
               <input type="password" id="gpassord" name="gpassord" required placeholder="***********">
             </div>
-            <div>
-              <label for="Født">Fødselsdato:</label><br>
+            <div class="tower flexrevolution">
+              <label  for="Født">Fødselsdato:</label><br>
               <input type="date" id="Født" name="Født" max="2002-12-31" required>
             </div>
           </div>
 
           <div class="formDiv tower flexable">
-            <div>
+            <div class="tower flexrevolution">
               <label for="navn">Navn:</label><br>
               <input type="text" id="navn" name="navn" required placeholder="Navn N. Navnesen">
             </div>
 
-            <div>
+            <div class="tower flexrevolution">
               <label for="Verv">Verv:</label><br>
               <input type="text" id="verv" name="verv" placeholder="Eks. linjeforening, Samfundet">  <!--Begrensing på hvor langt man kan skrive her?-->
             </div>
 
-            <div>
+            <div class="tower flexrevolution">
               <label for="Interesser">Interesser:</label><br>
               <input type="text" id="Interesser" name="Interesser" placeholder="Eks. finne et ledig grupperom"><!-- Eksempel teksten er for lang-->
             </div>
 
-            <div>
+            <div class="tower flexrevolution">
               <label for="Karakter">Karakter i Exphil:</label><br>
               <select id="Karakter" name="Karakter i Exphil" required>
                 <option disabled selected value> Velg din karakter</option> <!-- dette kokte jeg fra https://stackoverflow.com/questions/8605516/default-select-option-as-blank må sånt siteres? Endret her fra X til "velg din karakter"-->
@@ -92,7 +92,7 @@
                 </div>
               </div>
             </div>
-            <div class="flexable">
+            <div class="flexsimp">
               <label for="bio">Skriv en kort profiltekst:</label><br>
               <textarea name="bio" id="bio" cols="27" rows="7" maxlength="130" placeholder="Her kan du skrive hva du vil på maks 130 tegn."></textarea><!--Kan skrive 130  tegn i bio, relativt tifeldig valgt tall foreløpig-->
             </div>

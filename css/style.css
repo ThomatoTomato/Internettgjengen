@@ -2,19 +2,67 @@ html, body {
   position: relative;
   margin: 0;
   padding: 0;
+} 
 
-  /* Dette er noe som er veldig ulikt meg (Thomas), men vi kan faktisk definere globale variabler :scream: Fordelen ved å gjøre det slik i et markeringsspråk er at vi kun trenger å endre på denne ene tingen for å endre mer ting. */
+@media only screen and (max-width: 1920px) {
+  body {
+    --widthNormal: 822px;
+  }
+  
+  .large {
+    --widthLarge: 1372px;
+  }
+}
 
-  --eksempel: 2em;
-  --minHeight: 300px;
-  --minWidth: 300px;
-  --maxHeight: 500px;
-  --maxWidth: 500px;
+/* Definerer størrelser på elementer basert på skjermstørrelsen */
+@media only screen and (max-width: 1680px) {
+  body {
+    --widthNormal: 720px; 
+  }
+  
+  .large {
+    --widthLarge: 1200px;
+  }
+}
 
+@media only screen and (max-width: 1440px) {
+  body {
+    --widthNormal: 618px;
+  }
+  
+  .large {
+    --widthLarge: 1029px;
+  }
+}
 
-  /* Forstår ikke hvordan dette virker eller om det virker */
-  min-width: var(--minWidth);
-  min-height: var(--minHeight);
+@media only screen and (max-width: 1280px) {
+  body {
+    --widthNormal: 549px;
+  }
+  
+  .large {
+    --widthLarge: 915px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    --widthNormal: 439px;
+  }
+  
+  .large {
+    --widthLarge: 732px:
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    --widthNormal: 309px;
+  }  
+  
+  .large {
+    --widthLarge: 515px;
+  }
 }
 
 /* Gjennomgående sidestyling */
@@ -23,8 +71,9 @@ body {
   font-family: 'open sans light';
   color: white;
 
-  height: 100vh;
-  width: 100vw;
+  /* Setter den minste størrelsen til body til å være hele skjermen */
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 footer {
@@ -66,8 +115,10 @@ input, textarea {
 }
 
 input {
-  height: 30px;
-  width: 120%;
+  min-height: 30px;
+  /* height: 100%; */
+  max-width: 120%;
+  /* width: 100%; */
 }
 
 ::placeholder {
@@ -192,16 +243,37 @@ h1, h2, h3 {
   align-items: center;
 }
 
+
+/* Dominerer andre flexable, er en absolute alpha */
+.flexalphamale {
+  flex: 1 0 auto;
+}
+
 /* Gjør slik at ting krymper likt med andre, men ikke vokser. */
 .flexable {
   flex: 0 1 auto;
 }
 
+/* Simper for andre flexables */
+.flexsimp {
+  flex: 0 2 auto;
+}
+
+/* Blir alltid cucked av andre flex elementer */
+.flexbetacuck {
+  flex: 0 3 auto;
+}
+
+/* Det ideelle sammfunnet hvor alle fleks elementer har like rettigheter */
+.flexrevolution {
+  flex: 1 1 auto;
+}
+
 .large {
-  height: 60vh;
-  width: 72vw;
+  width: var(--widthLarge);
   min-height: 450px;
   min-width: 800px; 
+  margin: 0;
 }
 
 /* Liten hack for hovedsiden og forsiden */
