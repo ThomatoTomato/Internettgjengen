@@ -13,22 +13,32 @@ div > img {
 }
 
 .chain {
-    flex-flow: row nowrap
+    flex-flow: row nowrap;
+}
+
+/* Overwriter box attributene her og */
+.box {
+  height: 50vh;
 }
 
 #content {
     justify-content: flex-start;
     align-items: stretch;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #innhold {
-    width: inherit;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
     flex-flow: row wrap;
 }
 
 #dhsd {
     top: 0;
-    left: -160px;
+    left: -140px;
     transform: rotate(-0.2617993878rad); /* Tallet er sånn ca. pi/6 */
 }
 

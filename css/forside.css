@@ -1,6 +1,7 @@
 h1 {
     font-size: 400%;
     margin: 0 3%;
+    padding: 0;
 }
 
 #quote {
@@ -17,7 +18,7 @@ button {
 
 button:first-child {
     border: 5px solid #346dbc;
-    background-color: #7da2d5;   
+    background-color: #7da2d5;
 }
 
 button:last-child {
@@ -57,7 +58,7 @@ button:last-child {
 .pheart {
     max-width: calc(100% / 6);
   }
-  
+
 
 #form {
     position: relative;
@@ -102,4 +103,10 @@ input {
 #pil {
     top: 296px;
     left: -140px;
+}
+
+
+/* DIRTY */
+body {
+  transform: scale(0.70);
 }

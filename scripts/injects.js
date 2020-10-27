@@ -1,12 +1,12 @@
-if (window.sessionStorage.getItem("activeUser") == null) 
-{ 
+if (window.sessionStorage.getItem("activeUser") == null)
+{
     if ( document.head.id == "Forside" ) {}
     else if ( document.title == "Profil" || document.title == "Love @ NTNU" )
     {
         window.location.href = "forside.html";
-        displayRegister(); 
+        displayRegister();
     }
-    else 
+    else
     {
         displayRegister();
     }
@@ -20,15 +20,15 @@ else if (document.title == "Profil") {
 else if (document.head.id == "Hovedside") {
     displayProfil();
 }
-else { 
+else {
     displayHeart();
     displayProfil();
 }
 
 navigation();
 
-function displayHeart() 
-{ 
+function displayHeart()
+{
     // injecter hjertet
     console.log("Logga inn")
     let hjerte = document.createElement("a");
@@ -39,7 +39,7 @@ function displayHeart()
     hjerte_img.setAttribute("src", "img/elementer/pixelhjerte.png");
     hjerte_img.setAttribute("alt", "Pixelhjerte");
     hjerte.appendChild(hjerte_img);
-    
+
     document.body.insertBefore(hjerte, document.body.firstChild);
 }
 
@@ -55,7 +55,7 @@ function displayProfil()
     profil_img.setAttribute("src", "img/elementer/profil.png");
     profil_img.setAttribute("alt", "Profil");
     profil.appendChild(profil_img);
-    
+
     document.body.insertBefore(profil, document.body.firstChild);
 }
 
@@ -71,13 +71,13 @@ function displayLogout() {
     document.body.insertBefore(register, document.body.firstChild);
 }
 
-function displayRegister() 
-{ /* 
+function displayRegister()
+{ /*
     console.log("Ikke logga inn"); */
 
     // injecter register-button
     let register = document.createElement("BUTTON");
-    let text = document.createTextNode("Register");
+    let text = document.createTextNode("Registrer");
     register.appendChild(text);
     register.setAttribute("id", "registerButton");
     register.setAttribute("class", "iconoclast redButton");
@@ -107,12 +107,12 @@ function logout() {
 }
 
 // injecter footer
-function navigation() 
+function navigation()
 {
     let footer = document.getElementsByTagName("footer")[0];
 
     /* dette er jo finere da
-    footer.innerHTML = "<p><a href='tidligerevinnere.html'>Tidligere vinnere</a> | <a href='omoss.html'>Om oss</a> | <a href='vårmetode.html'>Vår metode</a> | <a href='howtoplay.html'>How To Play</a></p>"; 
+    footer.innerHTML = "<p><a href='tidligerevinnere.html'>Tidligere vinnere</a> | <a href='omoss.html'>Om oss</a> | <a href='vårmetode.html'>Vår metode</a> | <a href='howtoplay.html'>How To Play</a></p>";
     */
 
     let p_tag = document.createElement("p");
