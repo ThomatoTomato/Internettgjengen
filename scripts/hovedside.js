@@ -31,9 +31,9 @@ matches.push(generateMatch("img/profilbilder/E1.jpg", "Hvis alle mennesker var e
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Hvis alle yter etter evne og nyter etter behov blir verden en bedre plass<3 Send meg en melding hvis du vil yte og nyte sammen med meg ;)", "Karl", "21", "styremedlem i rrf", "politikk og velferd", "A", "13.04.1999", ["Hei kamerat", "vil du bli med å gjøre verden bedre", "Hvem er din favoritt filosof?"]));
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Livet er ikke bare en lek det er også en dans på roser! Jeg elsker kanelboller, livet og piler. ", "Jostein", "21", "leder for funktorkluben", "matematikk", "E", "15.04.1999", ["Hei", "vil du bli med å spille shuffel board i pause?", "du er stilig!", "du har nydelig øyne", "jeg tror jeg er forelsket i deg", "Yo!"]));
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Jeg har bodd i Kina. Hvis du er heldig kan du få smake min spesialsuppe jeg lært å lage i Kina. Det vil du ikke gå glipp av så send meg en melding! ", "Ola", "21", "sosialsjef i linjeforeningen", "Suppe og dans", "C", "11.08.1999", ["Hei", "Så du har lyst å smake på suppen min?", "møtes på lørdag?", "Så fint smil du har", "Du er søt", "fikk du også C i exphil? Kult", "Hva er det beste med å være så vakker?"]));
-matches.push(generateMatch("img/profilbilder/E1.jpg", "Oppvokst på Laksevåg, Bergens vestkant. Jeg studerer kybernetikk og robotikk og elsker det! Hvis du og liker roboter tror jeg vi kan bli en bra match! ", "Remy", "23", "robotbyggemester", "roboter og satelitter", "Har ikke hatt Exphil", "19.08.1997", ["Hei", "møtes på lørdag?", "Så fint smil du har", "Du er søt", "vil du øve til Exphil sammen?", "roboter er så kult, ikke sant?"]));
+matches.push(generateMatch("img/profilbilder/E1.jpg", "Oppvokst på Laksevåg, Bergens vestkant. Jeg studerer kybernetikk og robotikk og elsker det! Hvis du og liker roboter tror jeg vi kan bli en bra match! ", "Remy", "23", "robotbyggemester", "roboter og satelitter", "F2", "19.08.1997", ["Hei", "møtes på lørdag?", "Så fint smil du har", "Du er søt", "vil du øve til Exphil sammen?", "roboter er så kult, ikke sant?"]));
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Leter etter noen å dele bolig med fra høste. Da blir jeg kastet ut av kollektivet mitt fordi jeg har bodd der i 5 år. Men det er en god mulighet til å flytte sammen med deg!", "Sverre", "28", "Isfit", "alt annet en studier", "F", "19.08.1993", ["Hei",  "Er du hypp på å bli bedre kjent?", "Lyst til å ta en kaffe en dag?", "kult!", "For en morsom bio du har! HAHA!", "du er kul", "Jeg har mistet mitt mobilnr, kan jeg få ditt?"]));
-matches.push(generateMatch("img/profilbilder/E1.jpg", "Æ e trønder og stolt av d. Hvis du er østlendig bare dropp å sende melding. Det samme gjelder om du heier på Brann eller Molde. Hvis ikke vil jeg gjerne bli kjent:)", "Lise", "23", "fotballtrener", "fotball og karsk", "Har ikke hatt Exphil", "07.08.1997", ["Hei", "blir du med på lerkendal og se kamp i helgen?", "aritg", "lol", "du er så morsom", "hahah"]));
+matches.push(generateMatch("img/profilbilder/E1.jpg", "Æ e trønder og stolt av d. Hvis du er østlendig bare dropp å sende melding. Det samme gjelder om du heier på Brann eller Molde. Hvis ikke vil jeg gjerne bli kjent:)", "Lise", "23", "fotballtrener", "fotball og karsk", "F2", "07.08.1997", ["Hei", "blir du med på lerkendal og se kamp i helgen?", "aritg", "lol", "du er så morsom", "hahah"]));
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Jeg lever på grandiosa og mellombar. Søker derfor etter en som kan lage mat, gjerne også bake. Jeg tar med vin hvis du inviterer meg på middag", "Sussane", "19", "Økosjef", "netflix & chill", "D", "05.09.2001", ["Hallo", "haha", "gøy å se deg her", "vin og middag på søndag?"]));
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Jeg kan integrere og kan fortelle deg alt om sokrates. Jeg kan også rygge med henger og danse cha-cha-cha. Det er ganske unikt. Men jeg kan ikke flørte desverre.", "Fredrik", "22", "er mellom verv for tiden", "filosofi og derivering", "A", "18.10.1998", ["Hei og hopp", "hvis du hadde vært et tall mellom 1 og 10 hadde du vært 6 fordi du er perfekt", "kult", "Er alt bra? Det er et langt fall fra himmelen."]));
 matches.push(generateMatch("img/profilbilder/E1.jpg", "Studerer Bygg og Miljø, fjerde året, tredje klasse. Elsker betong og stål. Er også glad i en fest eller to. Dater folk uavhengig av hva de syns om betong.", "Tommy", "24", "byggmester", "Betong og løping", "B", "03.01.1996", ["halla", "liker du stål eller betong best?", "Du ser akkurat ut som min kommende kjæreste"]));
@@ -77,13 +77,22 @@ function displayMatchbyIndex(index)
 
   yourMatch = matchesThatSatisfyReqs[index];
   activeMatch = yourMatch;
+  let exphGrad;
+
+  // Hvis person ikke har bestått exphil
+  if (yourMatch.exphGrad == "F2") {
+    exphGrad = "Har ikke tatt Exphil";
+  }
+  else {
+    exphGrad = yourMatch.exphGrad;
+  }
 
   document.getElementById("pbilde").src = yourMatch.bilde;
   document.getElementById("profiltekst").innerHTML = yourMatch.bio;
   document.getElementById("navnAlder").innerHTML = "<b>" + yourMatch.navn + "</b> " + yourMatch.alder;
-  document.getElementById("activeInMatch").innerHTML = "<b>Aktiv i:</b> " + yourMatch.activeIn;
+  document.getElementById("activeInMatch").innerHTML = "<b>Verv:</b> " + yourMatch.activeIn;
   document.getElementById("interestsMatch").innerHTML = "<b>Interesser:</b> " + yourMatch.interests;
-  document.getElementById("exphGrad").innerHTML = "<b>Karakter i Ex.Phil:</b> " + yourMatch.exphGrad;
+  document.getElementById("exphGrad").innerHTML = "<b>Karakter i Ex.Phil:</b> " + exphGrad;
   document.getElementById("born").innerHTML = "<b>Født:</b> " + yourMatch.born;
   document.getElementById("chatview").innerHTML = yourMatch.chatView;
 
