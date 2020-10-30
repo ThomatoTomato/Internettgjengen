@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registrering.css">
 
-    <script src="scripts/registrering.js" charset="utf-8" async></script>
+    <script src="scripts/registrering.js" async></script>
     <script src="scripts/injects.js" async></script>
   </head>
 
@@ -21,7 +21,7 @@
         <div class="formContainer">
           <div class="formDiv tower flexrevolution">
             <div class="tower flexrevolution">
-              <label for="NTNU-email">NTNU-email:</label><br>
+              <label for="email">NTNU-email:</label><br>
               <input type="email" id="email" name="email" placeholder="brukernavn@stud.ntnu.no" required pattern=".*@.*ntnu.no"> <!-- Bruker en regex for å sjekke at denne mailen er fra NTNU-->
             </div>
             <div class="tower flexrevolution">
@@ -45,7 +45,7 @@
             </div>
 
             <div class="tower flexrevolution">
-              <label for="Verv">Verv:</label><br>
+              <label for="verv">Verv:</label><br>
               <input type="text" id="verv" name="verv" placeholder="Eks. linjeforening, Samfundet">  <!--Begrensing på hvor langt man kan skrive her?-->
             </div>
 
@@ -85,7 +85,7 @@
                   <img src="img/elementer/profil-gray.png" alt="">
                 </div>
 
-                <div id="vertHeartBox" class="flexable tower">
+                <div id="vertHeartBox2" class="flexable tower">
                   <img class="flexable pheart" src="img/elementer/pixelhjerte.png" alt="pixelhjerte">
                   <img class="flexable pheart" src="img/elementer/pixelhjerte.png" alt="pixelhjerte">
                   <img class="flexable pheart" src="img/elementer/pixelhjerte.png" alt="pixelhjerte">
@@ -100,17 +100,7 @@
         </div>
       </form>
     </div>
-  </div>
   <footer></footer>
 </body>
 
-<!--Ting å fikse for reg og profil siden:
-3.Placeholder for profilbilde
-4.Bare kunne laste opp jpg/png profilbilde og ikke pdf osv
-5.At siden ikke klikker når vinduet skaleres.
-8.Profil siden hva skal egt stå i rutene, gammel info eller info om hvordan oppdatere, og hvor skal evt annen infor være?
-9.Logg ut på profil
-10.Eksempel teksten på reg er lengre enn boksen.
-11. Hvor mye kan man skrive på verv/interesser/navn
-12. Hjerter rundt profilbildet
--->
+
