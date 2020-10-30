@@ -1,10 +1,17 @@
+h2 {
+    margin: 20px 8px 0px;
+    color: #ffeda3;
+    text-shadow: 5px -2px #ffd631;
+}
+
 p {
     color: black;
-    margin: 0 8px;
+    margin: 0 20px;
+    text-align: center;
 }
 
 p ~ img, div ~ img {
-    margin: 0 8px;
+    margin: 10px 0 20px;
     border: 4px solid #ffbd59;
 }
 
