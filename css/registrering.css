@@ -85,6 +85,10 @@ div > #registerButton{
   max-width: calc(100%/4);
 }
 
+#vertHeartBox2 {
+  max-width: calc(100%/4);
+}
+
 #pbBox {
   width: calc(100%/3);
   height: 150px;
