@@ -21,6 +21,10 @@ button:first-child {
     background-color: #7da2d5;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 button:last-child {
     border: 5px solid #032a5d;
     background-color: #004aad;

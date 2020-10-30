@@ -225,7 +225,7 @@ h1, h2, h3 {
 }
 
 /* flere mus */
-#hjerte:hover, #bheart:hover {
+#hjerte:hover, #bheart:hover, #scrollTop:hover, .redButton:hover {
   cursor: pointer;
 }
 
