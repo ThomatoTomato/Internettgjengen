@@ -2,14 +2,14 @@ html, body {
   position: relative;
   margin: 0;
   padding: 0;
-} 
+}
 
 /* Definerer størrelser på elementer basert på skjermstørrelsen. Av en eller annen grunn blir ting veldig pent når man deler på 7. */
 @media only screen and (max-width: 1920px) {
   .box {
     --widthNormal: 549px;
   }
-  
+
   .large {
     --widthLarge: 1372px;
   }
@@ -21,9 +21,9 @@ html, body {
 
 @media only screen and (max-width: 1680px) {
   .box {
-    --widthNormal: 504px; 
+    --widthNormal: 504px;
   }
-  
+
   .large {
     --widthLarge: 1200px;
   }
@@ -37,7 +37,7 @@ html, body {
   .box {
     --widthNormal: 486px;
   }
-  
+
   .large {
     --widthLarge: 1029px;
   }
@@ -50,7 +50,7 @@ html, body {
   .box {
     --widthNormal: 453px;
   }
-  
+
   .large {
     --widthLarge: 915px;
   }
@@ -64,9 +64,9 @@ html, body {
   .box {
     --widthNormal: 438px;
   }
-  
+
   .large {
-    --widthLarge: 732px:
+    --widthLarge: 732px;
   }
 
   #wrapper {
@@ -77,8 +77,8 @@ html, body {
 @media only screen and (max-width: 720px) {
   .box {
     --widthNormal: 412px;
-  }  
-  
+  }
+
   .large {
     --widthLarge: 515px;
   }
@@ -206,7 +206,7 @@ h1, h2, h3 {
   width: 140px;
   height: 70px;
   border: 5px solid #d61a22;
-  background-color: #ed1c24 ;   
+  background-color: #ed1c24 ;
   margin: 20px;
 }
 
@@ -241,7 +241,7 @@ h1, h2, h3 {
   width: var(--widthNormal);
   height: 500px;
   align-self: auto;
-  margin: 3%; 
+  margin: 3%;
   padding: 0;
 }
 
@@ -288,7 +288,7 @@ h1, h2, h3 {
 .large {
   width: var(--widthLarge);
   min-height: 450px;
-  min-width: 800px; 
+  min-width: 800px;
   margin: 0;
 }
 
@@ -304,7 +304,7 @@ label {
   color: black;
 }
 
-/* INFORMASJONSSIDER */ 
+/* INFORMASJONSSIDER */
 
 #content {
   width: 70vw;

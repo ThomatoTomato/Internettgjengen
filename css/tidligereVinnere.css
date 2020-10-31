@@ -16,7 +16,7 @@ p ~ img, div ~ img {
 }
 
 div > img {
-    max-width: calc(var(--widthNormal) / 2);
+    max-width: calc(var(--widthNormal) / 2); /* CSS-Validator sier dette er feil. Det er ikke det? */
 }
 
 .chain {

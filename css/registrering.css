@@ -12,7 +12,7 @@
     align-self: auto;
     margin-left: 50px;
     margin-top: 10px;
-    min-width: calc(var(--widthNormal) / 3);
+    min-width: calc(var(--widthNormal) / 3); /* CSS-Validator sier dette er feil. Det er ikke det? */
     align-items: stretch;
     justify-content: flex-start;
 }
@@ -74,7 +74,7 @@ div > #registerButton{
 }
 
 #imgBox {
-  width: calc(var(--widthLarge) / 3.2);
+  width: calc(var(--widthLarge) / 3.2); /* CSS-Validator sier dette er feil. Det er ikke det? */
 }
 
 #img {
