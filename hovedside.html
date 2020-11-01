@@ -6,39 +6,53 @@
     <title>Love @ NTNU</title>
     <link rel="icon" href="img/elementer/pixelhjerte.png">
 
+    <!-- Stylesheet inklusjon -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hovedside.css">
 
+    <!-- Script inklusjon -->
     <script src="scripts/hovedside.js" async></script>
     <script src="scripts/injects.js" async></script>
   </head>
 
   <body>
+    <!-- En boks for å holde hele skjermen og stakke elementene oppå hverandre -->
     <div id="wrapper" class="tower screen">
 
-      <img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()">
+      <!-- Lager en knapp som tar deg tilbake fra side2 til side1, denne er ikke synlig mens siden lastes inn -->
+      <img id="hjerte" class="iconoclast" src="img/elementer/pixelhjerte.png" alt="Pixelhjerte" onclick="back()"> 
+      <!-- De andre knappene injiseres fra injects.js -->
 
+      <!-- Dette er siden slik du først vil se den -->
       <div id="side1" class="tower">
-
         <h1 class="flexable">DU HAR EN NY MATCH</h1>
-        <img id="bheart" class="flexable" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
 
+        <!-- En knapp som tar deg til side2 -->
+        <img id="bheart" class="flexable" src="img/elementer/pixelhjerte.png" alt="slående hjerte" onclick="chat()">
       </div>
 
+      <!-- Dette er siden etter man har åpnet en match -->
       <div id="side2" class="chain">
-
+        <!-- Pil for å vise match til venstre -->
         <div id="leftArrow" class="flexable">
           <img src="img/elementer/hvitpil.png" alt="venstre">
         </div>
 
+        <!-- Div for å vise match, et flex tårn -->
         <div class="tower flexable">
           <h1 class="rosah1 flexable">DIN MATCH:</h1>
+
+          <!-- Boks for holde matchen, et flex tårn -->
           <div id="match" class="tower box">
+            <!-- Deler boksen i to for å enklere kunne vise informasjon riktig, bruker js for å dytte inn informasjonen -->
+            <!-- Øvre del -->
             <div id="Upper" class="chain flexable">
               <img id="pbilde" class="flexable" src="img/profilbilder/E1.jpg" alt="meg!">
               <p id="profiltekst"></p>
             </div>
+
+            <!-- Nedre del -->
             <div id="Lower" class="tower flexable">
               <p id="navnAlder"></p>
               <p id="activeInMatch"></p>
@@ -50,15 +64,22 @@
           </div>
         </div>
 
+        <!-- Logoen -->
         <div id="smallHack">
           <img id="lan" src="img/elementer/logo.png" alt="LAN">
         </div>
 
+        <!-- Div for chatteområdet -->
         <div class="tower flexable">
           <h1 class="rosah1">CHAT:</h1>
 
+          <!-- Chatteboksen -->
           <div class="box tower">
-            <div id="chatview"></div>
+            <!-- Deler chatteboksen i to, for å enklere kontrollere hvordan ting vises -->
+            <!-- Øvre del -->
+            <div id="chatview"></div> <!-- Denne fylles med ting fra js -->
+
+            <!-- Nedre del -->
             <div class="chain">
               <img src="img/elementer/chatboble.png" alt="Send melding" id="chatboble" onclick="displayMessage('user')">
               <textarea id="chatbar" rows="1" wrap="soft"> </textarea>
@@ -66,10 +87,13 @@
           </div>
         </div>
 
+        <!-- Høyre pil for å bytte mellom matcher -->
         <div id="rightArrow" class="flexable">
           <img src="img/elementer/hvitpil.png" alt="høyre">
         </div>
+
       </div>
-      <footer></footer>
+
+      <footer></footer> <!-- Her injiseres det kode -->
     </div>
   </body>

@@ -4,7 +4,7 @@ html, body {
   padding: 0;
 }
 
-/* Definerer størrelser på elementer basert på skjermstørrelsen. Av en eller annen grunn blir ting veldig pent når man deler på 7. */
+/* Definerer størrelser på elementer basert på skjermstørrelsen. Av en eller annen grunn blir ting veldig pent når man deler på 7.*/
 @media only screen and (max-width: 1920px) {
   .box {
     --widthNormal: 549px;

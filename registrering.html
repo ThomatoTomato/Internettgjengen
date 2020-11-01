@@ -5,55 +5,72 @@
     <title>Registrering</title>
     <link rel="icon" href="img/elementer/pixelhjerte.png">
 
+    <!-- Stylesheet inklusjon -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registrering.css">
 
+    <!-- Script inklusjon -->
     <script src="scripts/registrering.js" async></script>
     <script src="scripts/injects.js" async></script>
   </head>
 
   <body>
-
+    <!-- Div for å inneholde siden og stakke elementene oppå hverandre -->
     <div id="wrapper" class="tower">
       <h1>NEW PLAYER</h1>
+      <!-- En boks som skal være skjemaet og som skal ha prioritet ovenfår flexing -->
       <form id="form" class="box large flexalphamale">
+        <!-- Div for å få riktig styling -->
         <div class="formContainer">
+          <!-- Gruppering av elementer -->
           <div class="formDiv tower flexrevolution">
+            <!-- NTNU-email felt -->
             <div class="tower flexrevolution">
               <label for="email">NTNU-email:</label><br>
               <input type="email" id="email" name="email" placeholder="brukernavn@stud.ntnu.no" required pattern=".*@.*ntnu.no"> <!-- Bruker en regex for å sjekke at denne mailen er fra NTNU-->
             </div>
+            
+            <!-- Passord felt -->
             <div class="tower flexrevolution">
               <label for="passord">Passord:</label><br>
               <input type="password" id="passord" name="passord" placeholder="***********" required>
             </div>
+
+            <!-- Gjenta passord felt -->
             <div class="tower flexrevolution">
               <label for="gpassord">Gjenta passord:</label><br> <!-- Her er det foreløpig ingenting som krever at passorden skal være like. Fikses med JS senere-->
               <input type="password" id="gpassord" name="gpassord" required placeholder="***********">
             </div>
+
+            <!-- Fødselsdato felt -->
             <div class="tower flexrevolution">
               <label  for="Født">Fødselsdato:</label><br>
               <input type="date" id="Født" name="Født" max="2002-12-31" required>
             </div>
           </div>
 
+          <!-- Gruppering av elementer -->
           <div class="formDiv tower flexrevolution">
+            <!-- Navn felt -->
             <div class="tower flexrevolution">
               <label for="navn">Navn:</label><br>
               <input type="text" id="navn" name="navn" required placeholder="Navn N. Navnesen">
             </div>
 
+            <!-- Verv felt -->
             <div class="tower flexrevolution">
               <label for="verv">Verv:</label><br>
               <input type="text" id="verv" name="verv" placeholder="Eks. linjeforening, Samfundet">  <!--Begrensing på hvor langt man kan skrive her?-->
             </div>
 
+            <!-- Interesser felt -->
             <div class="tower flexrevolution">
               <label for="Interesser">Interesser:</label><br>
               <input type="text" id="Interesser" name="Interesser" placeholder="Eks. finne et ledig grupperom"><!-- Eksempel teksten er for lang-->
             </div>
 
+            <!-- Karakter i Exphil felt -->
             <div class="tower flexrevolution">
               <label for="Karakter">Karakter i Exphil:</label><br>
               <select id="Karakter" name="Karakter i Exphil" required>
@@ -70,9 +87,12 @@
             </div>
           </div>
 
+          <!-- Gruppering av elementer -->
           <div class="formDiv tower flexrevolution">
+            <!-- Bilde felter -->
             <div class="flexalphamale">
               <input type="file" id="img" name="img" accept="image/x-png,image/gif,image/jpeg"> <!-- Får forsatt lov å laste opp et doc eller pdf om jeg vil....Vet ikke hvordan jeg skal legge inn bilde som i mockup her-->
+              <!-- Legger inn bilde som i mockupen her -->
               <div id="imgBox" class="flexrevolution chain">
                 <div id="vertHeartBox" class="flexalphamale tower">
                   <img class="flexable pheart" src="img/elementer/pixelhjerte.png" alt="pixelhjerte">
@@ -92,6 +112,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Litt om deg selv feltet -->
             <div class="flexsimp">
               <label for="bio">Skriv en kort profiltekst:</label><br>
               <textarea name="bio" id="bio" cols="27" rows="7" maxlength="130" placeholder="Her kan du skrive hva du vil på maks 130 tegn."></textarea><!--Kan skrive 130  tegn i bio, relativt tifeldig valgt tall foreløpig-->
@@ -100,7 +122,7 @@
         </div>
       </form>
     </div>
-  <footer></footer>
+  <footer></footer> <!-- Injiserer ting her -->
 </body>
 
 
