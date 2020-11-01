@@ -4,8 +4,13 @@
   let email = sS.getItem("emailReg")
   let password = sS.getItem("passwordReg")
 
-  document.getElementById("email").value = email
-  document.getElementById("passord").value = password
+  // Disse if-statementsa fjerner en mulig error
+  if (email != null) {
+    document.getElementById("email").value = email
+  }
+  if (password != null) {
+    document.getElementById("passord").value = password
+  }
 
   sS.setItem("emailReg", "")
   sS.setItem("passwordReg", "")
