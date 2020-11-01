@@ -54,3 +54,11 @@ html, body {
   border-radius: 2px;
   color: black;
 }
+
+.cardContainer p {
+  font-size: 1.8vh;
+}
+
+.centerText {
+  text-align: center;
+}
