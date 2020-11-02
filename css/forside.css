@@ -1,6 +1,9 @@
+/* OVERLOAD */
+/* Denne siden bare tweaker css til enkelte elementer for at det skal være sann med ideen. */
 h1 {
     font-size: 400%;
     margin: 0 3%;
+    padding: 0;
 }
 
 #quote {
@@ -17,7 +20,11 @@ button {
 
 button:first-child {
     border: 5px solid #346dbc;
-    background-color: #7da2d5;   
+    background-color: #7da2d5;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 button:last-child {
@@ -31,7 +38,7 @@ button:last-child {
     margin: 0 3%;
 }
 
-#side, #intro  {
+#wrapper, #intro  {
     justify-content: space-around;
 }
 
@@ -52,24 +59,15 @@ button:last-child {
 #tv, #htp {
     line-height: 80%;
     letter-spacing: 5px;
-    font-style: italic;
-}
-
-#hjerteboks {
-    max-width: 85%;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-}
-
-#hjerteboks > img {
-    margin: 0 4%;
 }
 
 .pheart {
     max-width: calc(100% / 6);
-}
+  }
+
 
 #form {
+    position: relative;
     padding: 4%;
     justify-content: flex-start;
     align-items: stretch;
@@ -103,11 +101,18 @@ input {
 }
 
 #startHer {
-    top: 38%;
-    left: 3%;
+    position: absolute;
+    top: 172px;
+    left: -323px;
 }
 
 #pil {
-    top: 51%;
-    left: 13%;
+    top: 296px;
+    left: -140px;
+}
+
+
+/* DIRTY */
+body {
+  transform: scale(0.70);
 }

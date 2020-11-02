@@ -42,20 +42,29 @@ a:link, a:visited {
 }
 
 #tipstriks {
-    top: 10%;
-    left: -10%;
+    position: absolute;
+    top: 84px;
+    left: -123px;
 }
 
 #dhsd {
-    bottom: 8%;
-    left: 0%;
+    position: absolute;
+    bottom: 67px;
+    left: 0px;
 }
 
 #pil {
-    bottom: 3%;
-    left: 15%;
+    position: absolute;
+    bottom: 33px;
+    left: 192px;
 }
 
 #content {
     position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    #content > div > img {
+        display: none;
+    }
 }
