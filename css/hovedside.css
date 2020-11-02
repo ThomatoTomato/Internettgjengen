@@ -80,6 +80,8 @@ h1 {
     font-size: 120%;
 }
 
+/* CHAT */ 
+
 #chatview {
     width: 100%;
     max-width: calc(var(--maxWidth) -  20px); /* CSS-Validator sier dette er feil. Det er ikke det? */
@@ -139,6 +141,8 @@ h1 {
 textarea {
     font-size: larger;
 }
+
+/* */
 
 #wrapper {
     justify-content: flex-start;
