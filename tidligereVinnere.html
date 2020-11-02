@@ -5,49 +5,46 @@
         <title>Tidligere Vinnere</title>
         <link rel="icon" href="img/elementer/pixelhjerte.png">
 
+        <!-- Stylesheet inklusjon -->
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/tidligereVinnere.css">
 
+        <!-- Script inklusjon -->
         <script src="scripts/injects.js" async></script>
     </head>
 
     <body>
-
+        <!-- Div for å inneholde siden -->
         <div id="wrapper">
+            <!-- Div for å fortelle at dette er en infoside, og stakke alle elementene -->
             <div id="content" class="tower">
                 <h1 id="title" class="gulh1">TIDLIGERE VINNERE</h1>
 
+                <!-- Div som er en skjede mellom bokser -->
                 <div id="innhold" class="flexable chain">
-                    <div class="flexable box chain">
-                        <img id="dhsd" class="pynt" src="img/elementer/DisseHarSkjønt.png" alt="">
-                        <div class="flexable">
-                            <p>
-                                Vi brukte begge LAN og fant tonen over dårlig karakter i ex.phil, og senere over ostesmørbrød i elkantina. Takke være LAN har vi funnet en studiepartner og en partner i livet!
-                            </p>
+                    <!-- Div for den første tidligere vinneren -->
+                    <div class="flexable chain"> <!-- Hør med Maren/Markus om dette skal være en chain eller et tower -->
+                        <!-- Bilde som skal være fiksert relativt til denne Diven -->
+                        <img id="dhsd" class="pynt flexsimp" src="img/elementer/DisseHarSkjønt.png" alt="Disse har skjønt det">
+                        <!-- Boks for den første tidligere vinneren -->
+                        <div class="flexable box tower">
+                            <h2 class="flexrevolution">Karoline og Johan</h2>
+                            <p class="flexrevolution">Vi brukte begge LAN og fant tonen over dårlig karakter i ex.phil, og senere over ostesmørbrød i elkantina. Takke være LAN har vi funnet en studiepartner og en partner i livet!</p>
+                            <img class="flexable flexrevolution" src="img/TidligereVinnere/karolinejohan.jpg" alt="Karoline og Johan">
                         </div>
-                        <img class="flexable" src="img/Tidligere vinnere/Stockphoto.jpg" alt="Placeholder">
                     </div>
 
-
-                    <div class="flexable box chain">
-                        <div class="flexable">
-                          <p>
-                              Vi fant ut at vi alle er super engasjerte i studnetfivilligheten og fant ut at vi kan engasjere oss i hverandre ved hjelp av LAN. Nå har vi fast taco- og styremøtefredag sammen.
-                          </p>
-                        </div>
-                        <img class="flexable" src="img/Tidligere vinnere/Stock2.jpg" alt="Placeholder">
+                    <!-- Div for den andre tidligere vinneren -->
+                    <div class="flexable box tower">
+                        <h2 class="flexrevolution">Per og Kari</h2>
+                        <p class="flexrevolution">Vi fant ut at vi er super engasjerte i studnetfivilligheten og fant ut at vi kan engasjere oss i hverandre ved hjelp av LAN. Nå har vi fast taco- og styremøtefredag sammen.</p>
+                        <img class="flexable flexrevolution" src="img/TidligereVinnere/siljekristian.jpg" alt="Silje og Kristian">
                     </div>
-
                 </div>
 
-                <footer>
-
-                </footer>
-
+                <footer></footer> <!-- Her injiseres det ting -->
             </div>
         </div>
-
     </body>
-
 </html>

@@ -4,8 +4,13 @@
   let email = sS.getItem("emailReg")
   let password = sS.getItem("passwordReg")
 
-  document.getElementById("email").value = email
-  document.getElementById("passord").value = password
+  // Disse if-statementsa fjerner en mulig error
+  if (email != null) {
+    document.getElementById("email").value = email
+  }
+  if (password != null) {
+    document.getElementById("passord").value = password
+  }
 
   sS.setItem("emailReg", "")
   sS.setItem("passwordReg", "")
@@ -24,7 +29,15 @@ var imgInBase64;
 let imgUploader = document.getElementById("img");
 imgUploader.addEventListener("change", function() {
   let fileReader = new FileReader();
-  fileReader.readAsDataURL(imgUploader.files[0]);
+  // Dersom man allerede har lastet opp et profibilde og skal laste opp et nytt men trykker avbryt
+  // vil fileReader.readAsDataURL kaste en error, men det er ingenting som ikke funker selv om denne
+  // erroren blir kastet, derfor catcher jeg den istedenfor at den blir kastet ut i konsoll.
+  try {
+    fileReader.readAsDataURL(imgUploader.files[0]);
+  }
+  catch(err) {
+    return 0;
+  }
   fileReader.onloadend = function(event) {
     imgInBase64 = event.target.result;
 
