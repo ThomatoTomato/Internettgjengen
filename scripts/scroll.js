@@ -1,5 +1,5 @@
 /*Lager funksjon for å scrolle til toppen på en smud måte fra bunnen av siden*/ 
-/*Denne må taes inn på hver HTML side*/
+
 
 function scrollToTop() {
     let time = 400;
