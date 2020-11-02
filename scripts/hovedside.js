@@ -16,7 +16,7 @@ function generateMatch(bildeUrl, bio, navn, alder, activeIn, interests, exphGrad
     interests: interests,
     exphGrad: exphGrad,
     born: born,
-    answers: answers,
+    answers: answers, // liste med svar matchen skal ha
     chatView: ""
   };
   return matchObj;
@@ -72,6 +72,7 @@ function intializeMatches(gradeReq)
   return
 }
 
+// Displayer match gitt ved index
 function displayMatchbyIndex(index)
 {
 
@@ -98,13 +99,15 @@ function displayMatchbyIndex(index)
 
 }
 
-
+// Går tilbake til det store, bankende hjertet
 function back() {
     document.getElementById("side2").style = "display: none;"
     document.getElementById("hjerte").style = "display: none;"
     document.getElementById("side1").style = "display: flex;"
   }
 
+
+// Åpner matchene / chatten
 function chat() {
     document.getElementById("side1").style = "display:none;"
     document.getElementById("side2").style = "display:inline-flex;"
@@ -112,6 +115,7 @@ function chat() {
     intializeMatches(activeUser.grade);
 }
 
+// Displayer en melding i chatten
 function displayMessage(caller)
 {
 
@@ -121,17 +125,22 @@ function displayMessage(caller)
   var message;
   var name;
 
+  // Hvis funkjonen kalles fordi en bruker har skrevet noe i chatten
   if (caller === 'user')
   {
+    // Henter ut det brukeren har skrevet i input-boksen
     message = document.getElementById("chatbar").value;
     name = document.createTextNode("Du: ");
     nameNode.setAttribute("class", "userChatID");
-    // clearer chatboxen :))
+    // tømmer input-boksen 
     document.getElementById("chatbar").value = "";
   }
+  // Hvis funksjonen skal displaye melding fra en match
   else if (caller === "bot")
   {
+    // Sjekker om det faktisk er lastet inn en match
     if (activeMatch === null) { console.log("no match found"); return; }
+    // Plukker en tilfeldig frase fra matchens liste av svar
     message = activeMatch.answers[Math.round(Math.random()*(activeMatch.answers.length-1))];
     name = document.createTextNode(activeMatch.navn+": ");
     nameNode.setAttribute("class", "botChatID");
@@ -151,12 +160,14 @@ function displayMessage(caller)
   // scroller til bunn av chat på ny mld
   chatview.scrollTop = chatview.scrollHeight;
 
+  // Kaller på seg selv for at matchen skal svare dersom en bruker har skrevet noe
   if (caller === "user") { displayMessage("bot"); }
 }
 
-
+// Kaller displayMessage dersom en bruker har trykket 'enter' i input-boksen i chatten
 document.getElementById("chatbar").addEventListener("keydown", function(key) {
-  if(key.keyCode == 13){
+  if(key.key == 'Enter'){
+      // sørger for at det ikke blir en awkward tom linje
       key.preventDefault();
       displayMessage('user');
       // Her lagrer vi chatten til brukeren det chattes til
