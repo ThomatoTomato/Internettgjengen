@@ -12,7 +12,9 @@
       1. Refleksjon over svarene vi har fått
 3. Hva må til for innleveringen?
    1. Vi snakker om kravene for P3_changes og P4
-   2. Arbeid delegeres
+   2. Vi har feilmelding i console og HTML som ikke blir validert; spesielt vi bruker Center og det er vist ikke greit. Som vi må fiske ref krav fra P3.
+   3. Bildene på matcher bruker lang tid på å laste. Strider mot kravet vår fra klienten om 1 sekund tingen, vi bør vurdere å gå tilbake til bare like bilder eller spørre Pål om hvor nøye det er med de fake kravene.
+   4. Arbeid delegeres
 4. Møte med pål
    1. Vi snakker om det vi vil snakke om, kom gjerne med saker her
 5. Møtekritikk
