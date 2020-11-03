@@ -1,5 +1,5 @@
 # Internettgjengen  
-Hei og velkommen til internettgjengen siden egen github side. Ja det er faktisk oss, den OG internettgjengen som startet fenomet vi liker å kalle for internettet for 1 måned siden. Vi har kommet langt i utviklingen av internettet og etter en måned med arbeid har vi laget 5 forskjellige versioner av HTML, med HTML5 som vårt nyeste barn vi elsker. Vi har også laget CSS for å gi litt liv og farge til HTML5.
+Hei og velkommen til internettgjengen siden egen github side. Ja det er faktisk oss, den OG internettgjengen som startet fenomet vi liker å kalle internettet for litt over 2 måneder siden. Vi har kommet langt i utviklingen av internettet og etter en måned med arbeid har vi laget 5 forskjellige versioner av HTML, med HTML5 som vårt nyeste barn vi elsker. Vi har også laget CSS for å gi litt liv og farge til HTML5.
 
 ---
 
