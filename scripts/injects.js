@@ -1,6 +1,9 @@
+// Sjekker om brukeren er logget inn eller ikke
 if (window.sessionStorage.getItem("activeUser") == null)
 {
-    if ( document.head.id == "Forside" ) {}
+    // Ikke legg til logg inn / registrerings-knappene på forsiden
+    if ( document.head.id == "Forside" ) {} 
+    // Dersom man prøver å navigere seg til profil/hovedside uten å være logga inn, blir man redirigert til forsiden for innlogging / registrering
     else if ( document.title == "Profil" || document.title == "Love @ NTNU" )
     {
         window.location.href = "forside.html";
@@ -9,8 +12,15 @@ if (window.sessionStorage.getItem("activeUser") == null)
     else
     {
         displayRegister();
+        // Manipulerer de injecta knappene på registreringssiden
+        if (document.title == "Registrering") 
+        {
+            document.getElementById("registerButton").style.display = "none"; 
+            document.getElementById("loginButton").innerText = "Forside";
+        }
     }
 }
+// Dersom man prøver å navigere seg til forsiden mens man er logga inn, blir man redirigert til hovedsiden
 else if (document.head.id == "Forside") {window.location.href = "hovedside.html"}
 else if (document.title == "Profil") {
     displayHeart()
@@ -25,12 +35,12 @@ else {
     displayProfil();
 }
 
+// Legger inn navigasjonsbaren
 navigation();
 
+// injecter hjertet som navigerer til hovedsiden
 function displayHeart()
 {
-    // injecter hjertet
-    console.log("Logga inn")
     let hjerte = document.createElement("a");
     hjerte.setAttribute("href", "hovedside.html");
     let hjerte_img = document.createElement("img");
@@ -43,10 +53,9 @@ function displayHeart()
     document.body.insertBefore(hjerte, document.body.firstChild);
 }
 
+// injecter profilikonet som navigerer til profilsiden
 function displayProfil()
 {
-
-    // injecter profilikonet
     let profil = document.createElement("a");
     profil.setAttribute("href", "profil.html");
     let profil_img = document.createElement("img");
@@ -59,8 +68,9 @@ function displayProfil()
     document.body.insertBefore(profil, document.body.firstChild);
 }
 
+// injecter logg ut knapp
 function displayLogout() {
-    // injiserer logg ut knapp
+    
     let register = document.createElement("BUTTON");
     let text = document.createTextNode("Logg ut");
     register.appendChild(text);
@@ -72,9 +82,7 @@ function displayLogout() {
 }
 
 function displayRegister()
-{ /*
-    console.log("Ikke logga inn"); */
-
+{
     // injecter register-button
     let register = document.createElement("BUTTON");
     let text = document.createTextNode("Registrer");
@@ -99,6 +107,7 @@ function displayRegister()
 function redirectRegister() { window.location.href = 'registrering.html'; }
 function redirectForside() { window.location.href = 'forside.html'; }
 
+// logger ut brukeren
 function logout() {
     if (window.confirm("Er du sikker på at du vil logge ut?")) {
         sessionStorage.clear()
@@ -110,22 +119,20 @@ function logout() {
 function navigation()
 {
     let footer = document.getElementsByTagName("footer")[0];
-
-    /* dette er jo finere da
-    footer.innerHTML = "<p><a href='tidligerevinnere.html'>Tidligere vinnere</a> | <a href='omoss.html'>Om oss</a> | <a href='vårmetode.html'>Vår metode</a> | <a href='howtoplay.html'>How To Play</a></p>";
-    */
-
     let p_tag = document.createElement("p");
 
     let link1 = document.createElement("a");
     link1.setAttribute("href", "tidligereVinnere.html");
     link1.innerText = "Tidligere Vinnere | ";
+
     let link2 = document.createElement("a");
     link2.setAttribute("href", "omOss.html");
     link2.innerText = "Om Oss | ";
+
     let link3 = document.createElement("a");
     link3.setAttribute("href", "vårMetode.html");
     link3.innerText = "Vår Metode | ";
+    
     let link4 = document.createElement("a");
     link4.setAttribute("href", "howToPlay.html");
     link4.innerText = "How To Play";

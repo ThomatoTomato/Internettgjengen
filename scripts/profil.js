@@ -96,7 +96,7 @@ submit.addEventListener("submit", function(event) {
 
   let sessionStorage = window.sessionStorage;
   sessionStorage.setItem("activeUser", JSON.stringify(objectToBeStored));
-  window.location.href = "profil.html";
+  window.location.href = "hovedside.html";
 });
 
 
