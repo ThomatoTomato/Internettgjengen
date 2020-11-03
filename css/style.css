@@ -241,7 +241,7 @@ h1, h2, h3 {
   border: solid 12px #004aad;
   background-color: white;
   width: var(--widthNormal);
-  height: 500px;
+  min-height: 500px;
   align-self: auto;
   margin: 3%;
   padding: 0;
