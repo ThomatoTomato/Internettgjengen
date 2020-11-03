@@ -36,7 +36,7 @@
             </li>
             <li>
               <h3>Kommentarer om fonter og farger</h3>
-              <p>Av de skrifttypen vi planla å bruke på overskrifter/navn på siden/knapper droppet vi å bruke horizon siden denne skriften ikke er så lesbar. Vi gjorde likevel et unntak på siden vår metode der "motoet" studenter med samme exphilkarakter ligger bedre sammen står, fordi dette ikke er så viktig at folk leser, samtidig som skriften støtter opp om spillkonseptet.</p>
+              <p>Av de skrifttypen vi planla å bruke på overskrifter/navn på siden/knapper droppet vi å bruke horizon siden denne skriften ikke er så lesbar. Vi gjorde likevel et unntak på siden vår metode der slagordet studenter med samme exphilkarakter ligger bedre sammen står, fordi dette ikke er så viktig at folk leser, samtidig som skriften støtter opp om spillkonseptet.</p>
             </li>
 
             <li>
@@ -45,22 +45,25 @@
             </li>
             <li>
               <h3>Registeringssiden og Profil</h3>
-              <p>Vi endret fra "født" til "fødselsdato" i det ene feltet. [Vi endret også bilde rammen for profilbildet til en mer avlang en]. På profilsiden endret vi knappen i høyrehjørne fra å være et profilikon til en logg ut knapp. </p>
+              <p>Vi endret fra "født" til "fødselsdato" i det ene feltet. Vi endret også bilde rammen for profilbildet til en mer avlang en. På profilsiden endret vi knappen i høyrehjørne fra å være et profilikon til en logg ut knapp. </p>
               <p>På registreringssiden kan man nå gå tilbake til forsiden.</p>
             </li>
             <li>
               <h3>Hovedsiden</h3>
-              <p>Vi endret litt på hvordan Matchen ser ut når den kommer opp. Istedet for fult navn vises bare fornavn og alder og vi har flyttet denne teksten unde bildet. Videre endret vi "Aktiv i" til "Verv" og la til fødselsdato. Vi fjernet også soscial icons [og gjorde boksene mer avlange enn på Mockupen]</p>
+              <p>Vi endret litt på hvordan Matchen ser ut når den kommer opp. Istedet for fult navn vises bare fornavn og alder og vi har flyttet denne teksten unde bildet. Videre endret vi "Aktiv i" til "Verv" og la til fødselsdato. Vi fjernet også social icons på bunnen, ettersom vi ikke får integrert det på en fornuftig måte. </p>
             </li>
             <li>
               <h3>How to play, Tidligere vinnere, Vår metode og Om oss</h3>
               <p>På alle disse fire sidene når man ikke er innlogget endret vi knappen i høyre hjørne til å ha teksten "REGISTRER" istedet for "SPILL NÅ!" for at brukerne lettere skulle forstå at den knappen tar deg til registreringssiden. Vi la også til en knapp i høyre hjørne som tar deg tilbake til forsiden dersom du ikke er innlogget. Vi la ogsån inne en knapp "topp" på bunnen av hver side som tar deg til toppen på en smud måte, dette var planlagt men var ikke tegnet inn i Mockupen. I tillegg til disse endringene gjorde vi også noen endringer spesifikt på bare enkelte av disse sidene:</p>
                 <h4>How to play</h4>
                 <p>Vi fjernet pilen som skulle peke på register deg knappen fordi vi følte knappen var så tydelig. </p>
+                
                 <h4>Tidligere vinnere</h4>
-                    <p>Vi la inn navn på de tidligere vinnerne. </p>
+                <p>Vi la inn navn på de tidligere vinnerne. </p>
+                
                 <h4>Vår metode</h4>
                 <p>Mellom tekstblokkene "Filosofien vår" og "Match-magien" la vi til fem av de røde hjertene vi bruker generelt på siden for å skape litt mer liv i siden.</p>
+                
                 <h4>Om oss</h4>
                 <p>Vi planla at man kunne hovre på bildene av styret for å få mer informasjon om representatene i styret, men droppet dette fordi Linjeforeningen Indok ikke ønsket dette likevel.</p>
           </ol>
@@ -89,13 +92,12 @@
                 <li>...</li>
                 <li>vårMetode.css</li>
                 <li>fonts
-                    <ul>
-                        <li>cooperhewitt-heavy_allfont.net-webfont.woff</li>
-                        <li>...</li>
-                        <li>OpenSans-Light-webfont.woff</li>
-                    </ul>
+                  <ul>
+                    <li>cooperhewitt-heavy_allfont.net-webfont.woff</li>
+                    <li>...</li>
+                    <li>OpenSans-Light-webfont.woff</li>
+                  </ul>
                 </li>
-
               </ul>
             </li>
             <li>
@@ -133,7 +135,6 @@
                     <li>siljekristian.jpg</li>
                   </ul>
                 </li>
-
               </ul>
             </li>
             <li>
@@ -270,13 +271,10 @@
           </table>
           <p>Merk: selvom en person har hatt hovedansvaret for en fil har vi hjulpet hverandre og delegert der det har vært nødvendig.</p>
           <h3>Hvordan alle oppfylte minimumskravene</h3>
-          <p>Sarah oppfylte Javascript kravet med å lage en funksjon for at man kan scrolle til toppen på en smud måte ved å trykke på "topp" knappen på bunnen av en side i scroll.js. Maren, Thomas og Markus validerte inputen som blir skrevet når man registrerte seg i registrering.js. Thomas og Markus lagde paradigmet for hvordan vi burde bruke local storage og session storage for å lese og skrive til profiler som er registrert. Dette arbeidet omfatter ved at man kan lese tekst fra en form på en side og deretter hente det opp på en annen side, dette ble gjort i registrering.js, profil.js og delvis i forside.js. Markus tok ansvaret for å fikse muligheten for å bytte matcher i hovedside.js. Maren og Andrine jobbet med å lage knappene og footeren for å øke mengden av modularitet på siden vår i injects.js. Maren tok ansvaret for chatteboten og funksjonalitetene for chatting i hovedside.js.</p>
+          <p>Sarah oppfylte Javascript kravet med å lage en funksjon slik at man kan scrolle til toppen på en glatt måte ved å trykke på "topp" knappen på bunnen av en side i scroll.js. Maren, Thomas og Markus validerte inputen i skjemaene når man registrerte seg i registrering.js. Thomas og Markus lagde paradigmet på bruk av local storage og session storage for å lese og skrive til profiler som er registrert. Dette arbeidet bestod av at man kan lese tekst fra en form på en side og deretter hente det opp på en annen side, dette ble gjort i registrering.js, profil.js og delvis i forside.js. Markus tok ansvaret for å fikse muligheten for å bytte matcher i hovedside.js. Maren og Andrine jobbet med å lage knappene og footeren for å øke mengden av modularitet på siden vår i injects.js. Maren tok ansvaret for chatteboten og funksjonalitetene for chatting i hovedside.js.</p>
           <h3>Modularitet</h3>
-          <p>For å kunne oppnå best mulig form for modularitet er det viktig å spørre seg selv hvordan dette også enklest for en person å lese. Det er mange måter man kan klare å oppnå modularitet på, men med mer modularitet følger det større grad av abstraksjon av nettsiden, og dette gjør at det kanskje ikke er alltid så enkelt å forstå hva som gjør hva. Ut ifra dette valgte vi å ikke injecte formsa på registrering og profil ettersom de er nesten identiske, men satser heller på økt grad av leselighet for å gjøre det enklere å jobbe med markeringen. Enkelte knapper og footer som skal være på flere sider har vi abstrahert ut av HTML og legger de inn i markeringen via JS. For stylingen av sidene har vi en hovedstylesheet hvor vi definerer den generelle fargepaletten og strukturene som vi bruker. Dvs at det finnes noen generelle klasser og id-er som har en tedens til å komme igjen på sidene, for eksempel har vi laget flere klasser for flexboxene i style.css. Dette tillater oss å flytte definisjonen for flexboxene fra CSSen og inn i HTMLen hvor vi kan jobbe med utforming av nettsiden i HTML markeringen.</p>
+          <p>Det er mange måter man kan klare å oppnå modularitet på, men med mer modularitet følger det større grad av abstraksjon av nettsiden, og dette gjør at det kanskje ikke er alltid så enkelt å forstå hvilke deler av koden/markeringen som gjør hva. Ut ifra dette valgte vi å ikke injisere skjemaene på registrering og profil ettersom de er nesten identiske, men satser heller på økt grad av leselighet for å gjøre det enklere å jobbe med markeringen. Enkelte knapper og footere som skal være på flere sider har vi abstrahert ut av HTML og legger de inn i markeringen via JS. For stylingen av sidene har vi en hovedstylesheet hvor vi definerer den generelle fargepaletten og strukturene som vi bruker. Det vil si at det finnes noen generelle klasser og identifikasjoner som har en tedens til å komme igjen på sidene, for eksempel har vi laget flere klasser for flexboxene i style.css. Dette tillater oss å flytte definisjonen for flexboxene fra CSSen og inn i HTMLen hvor vi kan jobbe med utformingen av nettsiden i HTML markeringen.</p>
         </div>
       </div>
-  
-
-
   </body>
 </html>
