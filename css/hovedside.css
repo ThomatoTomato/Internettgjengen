@@ -80,11 +80,15 @@ h1 {
     font-size: 120%;
 }
 
+#navnAlder > p {
+    font-style: oblique;
+}
+
 /* CHAT */ 
 
 #chatview {
-    width: calc(100% - 50px);
-    max-width: calc(var(--maxWidth) -  20px); /* CSS-Validator sier dette er feil. Det er ikke det? */
+    width: calc(100% - 25px);
+    max-width: calc(var(--maxWidth) -  25px); /* CSS-Validator sier dette er feil. Det er ikke det? */
     height: 425px;
     border: solid 2px #004aad;
     color: black;
@@ -92,7 +96,7 @@ h1 {
     /* Scrolling */
     overscroll-behavior: contain; /* CSS-Validator sier at denne attributen ikke finnes, men det gjør den */
     overflow: auto;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 25px;
 }
 
 @media only screen and (max-width: 1024px) {
