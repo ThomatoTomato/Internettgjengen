@@ -97,6 +97,7 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
     #chatview {
+        width: 100%;
         padding: 0;
     }
 }
